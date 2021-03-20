@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>【动态规划】滑雪 | 地灵殿</title>
+  <title>【类型论】三、Second order typed lambda calculus | 地灵殿</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SHOI2002滑雪 滑雪一看就想到不上升链的动规，而转移方向是相邻的四个点，而只需要从大到小DP一遍就行了。O(4nm)">
-<meta name="keywords" content="OI,动态规划">
+  <meta name="description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  类型抽象和类型应用（Type-abstraction and type-application）对于抽象这个过程，我们有项$M$，其中可能有自由变量$x$，假设$x$有类型$\sigma$，我们从$M$中抽象$x$，可以得到项$\lambda x : \sigma.M$，同时，">
+<meta name="keywords" content="函数式,教程,类型论">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【动态规划】滑雪">
-<meta property="og:url" content="http://yoursite.com/2018/01/30/【动态规划】滑雪/index.html">
+<meta property="og:title" content="【类型论】三、Second order typed lambda calculus">
+<meta property="og:url" content="http://yoursite.com/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/index.html">
 <meta property="og:site_name" content="地灵殿">
-<meta property="og:description" content="SHOI2002滑雪 滑雪一看就想到不上升链的动规，而转移方向是相邻的四个点，而只需要从大到小DP一遍就行了。O(4nm)">
+<meta property="og:description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  类型抽象和类型应用（Type-abstraction and type-application）对于抽象这个过程，我们有项$M$，其中可能有自由变量$x$，假设$x$有类型$\sigma$，我们从$M$中抽象$x$，可以得到项$\lambda x : \sigma.M$，同时，">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-02T03:25:36.798Z">
+<meta property="og:updated_time" content="2021-03-20T09:14:19.232Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【动态规划】滑雪">
-<meta name="twitter:description" content="SHOI2002滑雪 滑雪一看就想到不上升链的动规，而转移方向是相邻的四个点，而只需要从大到小DP一遍就行了。O(4nm)">
+<meta name="twitter:title" content="【类型论】三、Second order typed lambda calculus">
+<meta name="twitter:description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  类型抽象和类型应用（Type-abstraction and type-application）对于抽象这个过程，我们有项$M$，其中可能有自由变量$x$，假设$x$有类型$\sigma$，我们从$M$中抽象$x$，可以得到项$\lambda x : \sigma.M$，同时，">
   
     <link rel="alternative" href="/atom.xml" title="地灵殿" type="application/atom+xml">
   
@@ -195,14 +195,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-【动态规划】滑雪" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-【类型论】三、Second-order-typed-lambda-calculus" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      【动态规划】滑雪
+      【类型论】三、Second order typed lambda calculus
     </h1>
   
 
@@ -214,8 +214,8 @@
         </span>
 
 
-<a href="/2018/01/30/【动态规划】滑雪/" class="archive-article-date">
-  	<time datetime="2018-01-30T10:33:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-30</time>
+<a href="/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/" class="archive-article-date">
+  	<time datetime="2021-03-16T12:41:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-16</time>
 </a>
         
       </header>
@@ -225,11 +225,131 @@
 	  
 	  
 	  
-        <p>SHOI2002滑雪</p>
-<p>滑雪一看就想到不上升链的动规，而转移方向是相邻的四个点，而只需要从大到小DP一遍就行了。O(4nm)</p>
+        <p>本文为<em>Type Theory and Formal Proof : An Introduction</em> 的笔记，纯个人向（</p>
+<hr>
+<h2 id="类型抽象和类型应用（Type-abstraction-and-type-application）"><a href="#类型抽象和类型应用（Type-abstraction-and-type-application）" class="headerlink" title="类型抽象和类型应用（Type-abstraction and type-application）"></a>类型抽象和类型应用（Type-abstraction and type-application）</h2><p>对于<em>抽象</em>这个过程，我们有项$M$，其中可能有自由变量$x$，假设$x$有类型$\sigma$，我们从$M$中抽象$x$，可以得到项$\lambda x : \sigma.M$，同时，所有在$M$中的自由变量$x$被绑定了，我们说：</p>
+<p><em>项$\lambda x:\sigma.M$依赖于项$x$</em>.</p>
+<p>因此，$\lambda{\to}$中可以构造<strong>依赖于项的项</strong>（terms depending on terms）.</p>
+<p>相应的是<em>应用</em>，对于$MN$的构造，我们可以把$M$应用到$N$，也得到一个项.</p>
+<p>这称为<em>一阶</em>（first order）抽象，或一阶依赖，因为这个抽象是在项上进行的. 同时应用也是一阶的.</p>
+<p>现在我们引入<strong>依赖于类型的项</strong>（terms depending on types），称<em>二阶<em>运算（</em>second order</em> operations）或二阶依赖（second order dependency）.</p>
+<p>得到的这一系统称<em>二阶类型lambda演算（second order typed lambda calculus）</em>，或$\lambda 2$.</p>
 <a id="more"></a>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> <span class="built_in">map</span>[<span class="number">105</span>][<span class="number">105</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> x,y,h;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> <span class="title">one</span>[10005]=&#123;</span><span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> dx[<span class="number">5</span>]=&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">-1</span>&#125;,</span><br><span class="line">    dy[<span class="number">5</span>]=&#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">-1</span>,<span class="number">0</span>,<span class="number">0</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">qqsort</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j,mid;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span> <span class="title">t</span>;</span></span><br><span class="line">    i=l;j=r;mid=one[(i+j)/<span class="number">2</span>].h;</span><br><span class="line">    <span class="keyword">do</span>&#123;</span><br><span class="line">        <span class="keyword">while</span>(one[i].h&gt;mid)i++;</span><br><span class="line">        <span class="keyword">while</span>(one[j].h&lt;mid)j--;</span><br><span class="line">        <span class="keyword">if</span>(i&lt;=j)&#123;</span><br><span class="line">            t=one[i];</span><br><span class="line">            one[i]=one[j];</span><br><span class="line">            one[j]=t;</span><br><span class="line">            i++;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">while</span>(i&lt;=j);</span><br><span class="line">    <span class="keyword">if</span>(i&lt;r)qqsort(i,r);</span><br><span class="line">    <span class="keyword">if</span>(l&lt;j)qqsort(l,j);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,m,i,j,k=<span class="number">1</span>,max=<span class="number">0</span>,hi,hj,ix,iy,jx,jy;</span><br><span class="line">    <span class="keyword">int</span> f[<span class="number">105</span>][<span class="number">105</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">      <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=m;j++)&#123;</span><br><span class="line">          <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;<span class="built_in">map</span>[i][j]);</span><br><span class="line">          one[k].x=i;</span><br><span class="line">          one[k].y=j;</span><br><span class="line">          one[k].h=<span class="built_in">map</span>[i][j];</span><br><span class="line">          k++;</span><br><span class="line">      &#125;</span><br><span class="line">    </span><br><span class="line">    qqsort(<span class="number">1</span>,n*m);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n*m;i++)&#123;</span><br><span class="line">      ix=one[i].x;</span><br><span class="line">      iy=one[i].y;</span><br><span class="line">      f[ix][iy]=<span class="number">1</span>;</span><br><span class="line">      <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=<span class="number">4</span>;j++)&#123;</span><br><span class="line">          jx=ix+dx[j];</span><br><span class="line">          jy=iy+dy[j];</span><br><span class="line">          hi=<span class="built_in">map</span>[ix][iy];</span><br><span class="line">          hj=<span class="built_in">map</span>[jx][jy];</span><br><span class="line">          <span class="keyword">if</span>(f[ix][iy]&lt;f[jx][jy]+<span class="number">1</span>&amp;&amp;hi&lt;hj)f[ix][iy]=f[jx][jy]+<span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span>(f[ix][iy]&gt;max)max=f[ix][iy];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>,max);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p><strong>例：</strong></p>
+<p>首先考虑<em>恒等函数（identity function）</em>，在$\lambda{\to}$中并不存在，因为我们需要一个任意的类型$\alpha$，然后构造$f \equiv \lambda x:\alpha .x$. 但这样，在应用一个自然数类型$nat$的$M$时，我们不能构造$fM$，因为$\alpha \not \equiv nat$，类型不匹配. </p>
+<p>因此对于这样的万能类型，我们需要引入<em>另一层抽象</em>：</p>
+<p>$\lambda \alpha:\ast.\lambda x:\alpha.x$.</p>
+<p>这里变量$\alpha$的类型引入新记号$\ast$，指<em>所有类型的类型（the type of all types）</em>.</p>
+<p>此时$\lambda \alpha:\ast.\lambda x:\alpha.x$也是一个项，但是一个<em>依赖于类型的项（term depending on a type）</em>. 这里依赖的类型是$\alpha$.</p>
+<p>得到的这个项称为<em>多态（polymorphic）</em>恒等函数. 注意这还不是恒等函数本身，我们还需要进行一次（二阶）应用和Beta归约得到一个真正的恒等函数：</p>
+<ul>
+<li>$(\lambda \alpha :\ast.\ \lambda x:\alpha . x)nat \to_\beta \lambda x:nat.x$，为自然数上的恒等函数</li>
+<li>$(\lambda \alpha :\ast.\ \lambda x:\alpha . x)(nat\to bool) \to_\beta \lambda x:(nat\to bool).x$，为$nat\to bool$上的.</li>
+</ul>
+<p>因此我们还需要增加二阶的抽象和应用，以及对于二阶项的Beta归约.</p>
+<h2 id="Pi-类型（-Pi-types）"><a href="#Pi-类型（-Pi-types）" class="headerlink" title="$\Pi$类型（$\Pi$-types）"></a>$\Pi$类型（$\Pi$-types）</h2><p>我们引入<em>二阶lambda抽象（second order $\lambda$-abstraction）</em>或<em>类型抽象（type-abstraction）</em>，例如：</p>
+<p>$\lambda \alpha:*.\lambda x:\alpha.x$.</p>
+<p>在$\lambda{\to}$中，我们猜想它的类型是：</p>
+<p>$\lambda \alpha:\ast.\lambda x:\alpha.x\quad:\quad\ast\to(\alpha\to \alpha)$.</p>
+<p>然而问题是在上面的二阶表达式中，类型$\alpha$变成了一个绑定的变量，我们有理由认为$\lambda \alpha:\ast.\lambda x:\alpha.x$与$\lambda \beta:\ast.\lambda x:\beta.x$相同. 然而$\lambda \alpha:\ast.\lambda x:\alpha.x:\ast\to(\alpha\to\alpha)$，但$\lambda \beta:\ast.\lambda x:\beta.x:\ast\to(\beta\to\beta)$，相同的项有了不同的类型. 这是由于，我们认为左侧的$\alpha$和$\beta$是绑定的变量，而右侧的是自由变量. 因此我们引入一种新绑定：类型绑定（type-binder） 或 $\Pi$绑定（$\Pi$-binder）. 一个将<em>任意</em>类型$\alpha$到类型为$\alpha\to\alpha$的函数的类型记作$\Pi\alpha:\ast.\alpha\to\alpha$.</p>
+<p>我们简单推广$\alpha$变换，有$\Pi\alpha:\ast.\alpha\to\alpha\equiv_\alpha\Pi\beta:\ast.\beta\to\beta$. 此时我们有：</p>
+<p>$$<br>\lambda \alpha:\ast.\lambda x:\alpha.x\quad:\quad\Pi\alpha:\ast.\alpha\to\alpha\<br>\equiv\quad\lambda \beta:\ast.\lambda x:\beta.x\quad:\quad\Pi\beta:\ast.\beta\to\beta<br>$$</p>
+<blockquote>
+<p>在数学中，$\Pi$用于乘积，而$\Pi$类型也称作积类型.</p>
+</blockquote>
+<h2 id="二阶抽象和应用法则（Second-order-abstraction-and-application-rules）"><a href="#二阶抽象和应用法则（Second-order-abstraction-and-application-rules）" class="headerlink" title="二阶抽象和应用法则（Second order abstraction and application rules）"></a>二阶抽象和应用法则（Second order abstraction and application rules）</h2><h3 id="二阶抽象法则（Second-order-abstraction-rule）"><a href="#二阶抽象法则（Second-order-abstraction-rule）" class="headerlink" title="二阶抽象法则（Second order abstraction rule）"></a>二阶抽象法则（Second order abstraction rule）</h3><p>$(abst_2)\ \dfrac{\Gamma,\ \alpha:\ast\ \vdash\ M:A}{\Gamma\ \vdash\ \lambda \alpha:\ast.M\ :\ \Pi\alpha:\ast.A}$</p>
+<p>当上下文中$M$有类型$A$且$\alpha$有类型$\ast$，则$\lambda \alpha:\ \ast.\ M$有类型$\Pi\alpha:\ast\ .A$. 新的地方是：我们允许二阶声明在上下文中.</p>
+<h3 id="二阶应用法则（Second-order-application-rule）"><a href="#二阶应用法则（Second-order-application-rule）" class="headerlink" title="二阶应用法则（Second order application rule）"></a>二阶应用法则（Second order application rule）</h3><p>$(appl_2)\ \dfrac{\Gamma\ \vdash\ M\ :\ \Pi\alpha:\ast.\ A\qquad\Gamma\ \vdash\ B:\ast}{\Gamma\ \vdash\ MB\ :\ A[\alpha:=B]}$</p>
+<h2 id="lambda2-系统（The-system-lambda2-）"><a href="#lambda2-系统（The-system-lambda2-）" class="headerlink" title="$\lambda2$系统（The system $\lambda2$）"></a>$\lambda2$系统（The system $\lambda2$）</h2><p>以下是$\lambda2$的完整定义：</p>
+<h3 id="lambda2-类型（-lambda2-types）"><a href="#lambda2-类型（-lambda2-types）" class="headerlink" title="$\lambda2$类型（$\lambda2$-types）"></a>$\lambda2$类型（$\lambda2$-types）</h3><p>$\mathbb{T2=V|(T2\to T2)|(\Pi V:*.T2)}$，其中$\mathbb{V}$是类型变量集合.</p>
+<h3 id="二阶预定型项（Second-order-pre-typed-lambda-terms-lambda2-terms-Lambda-mathbb-T2-）"><a href="#二阶预定型项（Second-order-pre-typed-lambda-terms-lambda2-terms-Lambda-mathbb-T2-）" class="headerlink" title="二阶预定型项（Second order pre-typed $\lambda$-terms, $\lambda2$-terms, $\Lambda_\mathbb{T2}$）"></a>二阶预定型项（Second order pre-typed $\lambda$-terms, $\lambda2$-terms, $\Lambda_\mathbb{T2}$）</h3><p>$\mathbb{\Lambda_{T2}}=V|(\mathbb{\Lambda_{T2}\Lambda_{T2}})|(\Lambda_\mathbb{T2}\mathbb{T2})|(\lambda V:\mathbb{T2.\Lambda_{T2}})|(\lambda\mathbb{V}:*.\Lambda_\mathbb{T2})$.</p>
+<p>此时我们有两种变量：对象变量（object variables）$V$（如$x,\ y,\ \dots$）和类型变量（type variables）$\mathbb{V}$（如$\alpha,\ \beta,\ \dots$）. 我们有一阶抽象$(\lambda V:\mathbb{T2.\Lambda_{T2}})$和二阶抽象$(\lambda\mathbb{V}:*.\Lambda_\mathbb{T2})$，一阶应用$(\mathbb{\Lambda_{T2}\Lambda_{T2}})$和二阶应用$(\Lambda_\mathbb{T2}\mathbb{T2})$.</p>
+<h3 id="陈述，声明（Statement-declaration）"><a href="#陈述，声明（Statement-declaration）" class="headerlink" title="陈述，声明（Statement, declaration）"></a>陈述，声明（Statement, declaration）</h3><ol>
+<li><em>陈述（statement）</em>要么形如$M:\sigma$，其中$M\in\Lambda_\mathbb{T2}$且$\sigma:\mathbb{T2}$，要么形如$\sigma:\ast$，其中$\sigma \in \mathbb{T2}$.</li>
+<li><em>声明（declaration）</em>是一个以<em>项变量（type variable）</em>或<em>类型变量（term variable）</em>为主体的陈述.</li>
+</ol>
+<p>在$\lambda{\to}$中，<em>上下文</em>只是一个项声明的列表. 在$\lambda2$中，所有变量在被使用之前必须声明. 所以，类型变量$\alpha$（具有类型$\ast$）这个声明必须先于$x:\alpha\to\alpha$这个声明. </p>
+<h3 id="lambda2-上下文、定义域（-lambda2-context-domain-rm-dom-）"><a href="#lambda2-上下文、定义域（-lambda2-context-domain-rm-dom-）" class="headerlink" title="$\lambda2$上下文、定义域（$\lambda2$-context; domain; ${\rm dom}$）"></a>$\lambda2$上下文、定义域（$\lambda2$-context; domain; ${\rm dom}$）</h3><ol>
+<li>$\emptyset$是$\lambda2$上下文；${\rm dom(\emptyset)}=(\ )$，为空列表.</li>
+<li>若$\Gamma$是$\lambda2$上下文，$\alpha\in\mathbb{V}$且$\alpha\not\in{\rm dom}(\Gamma)$，则$\Gamma,\ \alpha:*$是$\lambda2$上下文.</li>
+<li>若$\Gamma$是$\lambda2$上下文，若$\rho \in \mathbb{T2}$使得对$\rho$中的所有自由变量$\alpha$都有$\alpha \in {\rm dom}(\Gamma)$且$x \not \in {\rm dom}(\Gamma)$，则$\Gamma,\ x:\rho$是$\lambda2$上下文.</li>
+</ol>
+<blockquote>
+<p>此定义中蕴含了$\lambda2$上下文中的变量互不相同.</p>
+</blockquote>
+<h3 id="lambda2-的-var-法则（Var-rule-for-lambda2-）"><a href="#lambda2-的-var-法则（Var-rule-for-lambda2-）" class="headerlink" title="$\lambda2$的$(var)$法则（Var-rule for $\lambda2$）"></a>$\lambda2$的$(var)$法则（Var-rule for $\lambda2$）</h3><p>$(var)\quad \Gamma \vdash x:\sigma$，如果$\Gamma$是$\lambda2$上下文且$x:\sigma\in\Gamma$.</p>
+<p>$\lambda2$的$(var)$法则也是没有<strong>前提</strong>的.</p>
+<p>对于$\lambda2$的派生，我们现在有复用$\lambda{\to}$中的$(appl)$和$(abst)$，刚刚定义的$(var)$和新加入的$(appl_2)$和$(abst_2)$.</p>
+<p>然而当使用这五条法则时，我们将无法使用到$(appl_2)$法则，因为它的第二个<strong>前提</strong>是$\Gamma\ \vdash\ B:<em>$，而我们没有规则使得有东西具有类型$</em>$（没有形如$\dots\ \vdash\ \dots\ :\ <em>$的*</em>结论**）.</p>
+<p>直觉告诉我们，$B:*$，只要$B$是个类型且我们已知所有$B$中的类型变量，因此有：</p>
+<h3 id="form-法则（Formation-rule）"><a href="#form-法则（Formation-rule）" class="headerlink" title="$(form)$法则（Formation rule）"></a>$(form)$法则（Formation rule）</h3><p>$(form)\quad\Gamma\ \vdash\ B:*$，如果$\Gamma$是$\lambda2$上下文，$B\in\mathbb{T2}$且所有在$B$中的自由类型变量都在$\Gamma$有声明.</p>
+<blockquote>
+<p>$(form)$法则虽然有三个条件，但也没有<strong>前提</strong>，可以作为派生树的叶子</p>
+</blockquote>
+<p>于是$\lambda2$的所有派生法则：</p>
+<p>$(var)\quad \Gamma \vdash x:\sigma$，如果$\Gamma$是$\lambda2$上下文且$x:\sigma\in\Gamma$.</p>
+<p>$(appl)\ \dfrac{\Gamma\ \vdash\ M:\sigma\to\tau\quad\Gamma\ \vdash\ N:\sigma}{\Gamma\ \vdash\ MN:\tau}$</p>
+<p>$(abst)\ \dfrac{\Gamma,\ x:\sigma\ \vdash\ M:\tau}{\Gamma\ \vdash\ \lambda x:\sigma.\ M\ :\ \sigma\to\tau}$</p>
+<p>$(form)\quad\Gamma\ \vdash\ B:*$，如果$\Gamma$是$\lambda2$上下文，$B\in\mathbb{T2}$且所有在$B$中的自由类型变量都在$\Gamma$有声明.</p>
+<p>$(appl_2)\ \dfrac{\Gamma\ \vdash\ M\ :\ \Pi\alpha:\ast.\ A\qquad\Gamma\ \vdash\ B:\ast}{\Gamma\ \vdash\ MB\ :\ A[\alpha:=B]}$</p>
+<p>$(abst_2)\ \dfrac{\Gamma,\ \alpha:\ast\ \vdash\ M:A}{\Gamma\ \vdash\ \lambda \alpha:\ast.M\ :\ \Pi\alpha:\ast.A}$</p>
+<h3 id="合法的-lambda2-项（Legal-lambda2-terms）"><a href="#合法的-lambda2-项（Legal-lambda2-terms）" class="headerlink" title="合法的$\lambda2$项（Legal $\lambda2$-terms）"></a>合法的$\lambda2$项（Legal $\lambda2$-terms）</h3><p>称$\mathbb{\Lambda_{T2}}$中的项$M$<em>合法</em>（legal），若存在$\lambda2$上下文$\Gamma$和$\mathbb{T2}$类型$\rho$使得$\Gamma\vdash M:\rho$.</p>
+<h2 id="lambda2-中的派生例"><a href="#lambda2-中的派生例" class="headerlink" title="$\lambda2$中的派生例"></a>$\lambda2$中的派生例</h2><p>试图派生$M\equiv\lambda\alpha:*.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(f\ x)$.</p>
+<p>即找到上下文$\Gamma$和类型$\rho$使得$\Gamma\vdash M:\rho$. 因为$M$没有自由项或类型变量，所有可以取$\Gamma\equiv\emptyset$，于是：</p>
+<p>$(n)\quad\lambda\alpha:*.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(f\ x)\quad:\quad?$</p>
+<p>下一个定型的项是“二阶$\lambda$”，因此使用$(abst_2)$.</p>
+<p>$(m)\quad \alpha:*\ \vdash\ \lambda f:\alpha\to\alpha.\lambda x:\alpha.f(f\ x)\ :\ ?$</p>
+<p>$(n)\quad\lambda\alpha:*.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(f\ x)\ :\ \dots\quad对(m)用(abst_2)$</p>
+<p>新的目标是$\lambda f:\alpha\to\alpha.\ \dots$，是个普通的一阶抽象，使用$(abst)$：</p>
+<p>$(k)\quad\alpha:*,\ f:\alpha\to\alpha,\ x:\alpha\ \vdash\ f(fx)\ :\ ?$</p>
+<p>$(l)\quad\alpha:*,\ f:\alpha\to\alpha\ \vdash\ \lambda x:\alpha.f(fx)\ :\ \dots\quad对（k）用(abst)$</p>
+<p>$(m)\quad\alpha:*\ \vdash\ \lambda f:\alpha\to\alpha.\lambda x:\alpha.f(fx)\ :\ \dots\quad对(l)用(abst)$</p>
+<p>$(n)\quad\lambda\alpha:*.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(f\ x)\ :\ \dots\quad对(m)用(abst_2)$</p>
+<p>剩下的就是一个$\lambda{\to}$ 的定型问题，于是给出简略版本：</p>
+<p>$(1)\quad\alpha:*,\ f:\alpha\to\alpha,\ x:\alpha\ \vdash\ fx\ :\ \alpha$</p>
+<p>$(2)\quad\alpha:*,\ f:\alpha\to\alpha,\ x:\alpha\ \vdash\ f(fx)\ :\ \alpha$</p>
+<p>$(3)\quad\alpha:*,\ f:\alpha\to\alpha\ \vdash\ \lambda x:\alpha.f(fx)\ :\ type_1\quad对（2）用(abst)$</p>
+<p>$(4)\quad\alpha:*\ \vdash\ \lambda f:\alpha\to\alpha.\lambda x:\alpha.f(fx)\ :\ type_2\quad对(3)用(abst)$</p>
+<p>$(5)\quad\lambda\alpha:*.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(f\ x)\ :\ type_3\quad对(4)用(abst_2)$</p>
+<p>最后填入$type_1$，$type_2$和$type_3$，使用$(abst)$和$(abst_2)$法则：</p>
+<p>$type_1\equiv\alpha\to\alpha$</p>
+<p>$type_2\equiv(\alpha\to\alpha)\to\alpha\to\alpha$</p>
+<p>$type_3\equiv\Pi\alpha:*.(\alpha\to\alpha)\to\alpha\to\alpha$</p>
+<p>填入第五行，结论是：</p>
+<p>$(5)\quad\emptyset\vdash\lambda\alpha:\ast.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(fx):\Pi\alpha:\ast.(\alpha\to\alpha)\to\alpha\to\alpha$.</p>
+<p>由Thinning引理（见下一节），我们可以得到，对于所有$\lambda2$上下文$\Gamma$：</p>
+<p>$(6)\quad\Gamma\vdash\lambda\alpha:\ast.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(fx):\Pi\alpha:\ast.(\alpha\to\alpha)\to\alpha\to\alpha$.</p>
+<p>假设我们有类型$nat$：</p>
+<p>$(7)\quad\Gamma\vdash nat:*$</p>
+<p>有$(6)$和$(7)$用$(appl_2)$：</p>
+<p>$(8)\quad\Gamma\vdash(\lambda\alpha:*.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(fx))\ nat:(nat\to nat)\to nat\to nat$.</p>
+<p>假设有：</p>
+<p>$(9)\quad\Gamma\vdash suc\ :\ nat\to nat$，</p>
+<p>对$(8)$和$(9)$用$(appl)$：</p>
+<p>$(10)\quad\Gamma\vdash(\lambda\alpha:*.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(fx))\ nat \ suc:nat\to nat$.</p>
+<p>有$\Gamma\vdash two:nat$，得到：</p>
+<p>$(11)\quad\Gamma\vdash(\lambda\alpha:*.\lambda f:\alpha\to\alpha.\lambda x:\alpha.f(fx))\ nat \ suc\ two:nat$.</p>
+<h2 id="lambda2-的性质"><a href="#lambda2-的性质" class="headerlink" title="$\lambda2$的性质"></a>$\lambda2$的性质</h2><h3 id="Alpha替换-Alpha等价推广（α-conversion-α-equivalence-extended）"><a href="#Alpha替换-Alpha等价推广（α-conversion-α-equivalence-extended）" class="headerlink" title="Alpha替换/Alpha等价推广（α-conversion/α-equivalence, extended）"></a>Alpha替换/Alpha等价推广（α-conversion/α-equivalence, extended）</h3><p>（1a）项变量重命名</p>
+<p>$\lambda x:\sigma.M=_\alpha\lambda y:\sigma.M^{x\to y}$如果$y \not\in FV(M)$且$y$不是$M$中的绑定变量.</p>
+<p>（1b）类型变量重命名</p>
+<p>$\lambda \alpha:\ast.M=_\alpha \lambda\beta:\ast.M[\alpha:=\beta]$如果$\beta$不在$M$中出现，</p>
+<p>$\Pi\alpha:\ast.M=_\alpha\Pi\beta:\ast.M[\alpha:=\beta]$如果$\beta$不在$M$中出现.</p>
+<h3 id="mathbb-Lambda-2-项的单步Beta归约（One-step-beta-reduction-to-beta-for-mathbb-Lambda-2-terms）"><a href="#mathbb-Lambda-2-项的单步Beta归约（One-step-beta-reduction-to-beta-for-mathbb-Lambda-2-terms）" class="headerlink" title="$\mathbb{\Lambda_2}$项的单步Beta归约（One-step $\beta$-reduction, $\to_\beta$for $\mathbb{\Lambda_2}$-terms）"></a>$\mathbb{\Lambda_2}$项的单步Beta归约（One-step $\beta$-reduction, $\to_\beta$for $\mathbb{\Lambda_2}$-terms）</h3><p>（1a）一阶：$(\lambda x:\sigma.M)N\to_\beta M[x:=N]$</p>
+<p>（1b）二阶：$(\lambda \alpha:*.M)T\to_\beta M[\alpha:=T]$</p>
+<h3 id="lambda2-中依然成立的引理"><a href="#lambda2-中依然成立的引理" class="headerlink" title="$\lambda2$中依然成立的引理"></a>$\lambda2$中依然成立的引理</h3><ul>
+<li>Free Variables Lemma</li>
+<li>Thinning Lemma</li>
+<li>Condensing Lemma</li>
+<li>Generation Lemma</li>
+<li>Subterm Lemma</li>
+<li>Uniqueness of Types</li>
+<li>Substitution Lemma</li>
+<li>Church–Rosser Theorem</li>
+<li>Subject Reduction</li>
+<li>Strong Normalisation Theorem</li>
+</ul>
+<p>注意唯一不适用的引理是Permutation Lemma，因为对于上下文，后出现的声明可能依赖于前面的。而如果我们改成定义中的$\lambda2$上下文，则就仍然成立.</p>
 
       
 
@@ -269,11 +389,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">OI</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">函数式</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动态规划</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">类型论</a>
         		</li>
       		
 		</ul>
@@ -285,7 +409,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/OI//" class="article-tag-list-link color3">OI</a>
+        			<a href="/categories/小课堂//" class="article-tag-list-link color4">小课堂</a>
         		</li>
       		
 		</ul>
@@ -340,7 +464,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/30/【动态规划】滑雪/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -354,18 +478,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/02/01/【搜索】单词接龙/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          【搜索】单词接龙
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/01/29/【线段树】I-Hate-It/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">【线段树】I Hate It</div>
+    <a href="/2021/03/06/【类型论】二、Simply-typed-lambda-calculus/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">【类型论】二、Simply typed lambda calculus</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -392,7 +507,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#类型抽象和类型应用（Type-abstraction-and-type-application）"><span class="toc-number">1.</span> <span class="toc-text">类型抽象和类型应用（Type-abstraction and type-application）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pi-类型（-Pi-types）"><span class="toc-number">2.</span> <span class="toc-text">$\Pi$类型（$\Pi$-types）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二阶抽象和应用法则（Second-order-abstraction-and-application-rules）"><span class="toc-number">3.</span> <span class="toc-text">二阶抽象和应用法则（Second order abstraction and application rules）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#二阶抽象法则（Second-order-abstraction-rule）"><span class="toc-number">3.1.</span> <span class="toc-text">二阶抽象法则（Second order abstraction rule）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二阶应用法则（Second-order-application-rule）"><span class="toc-number">3.2.</span> <span class="toc-text">二阶应用法则（Second order application rule）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda2-系统（The-system-lambda2-）"><span class="toc-number">4.</span> <span class="toc-text">$\lambda2$系统（The system $\lambda2$）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lambda2-类型（-lambda2-types）"><span class="toc-number">4.1.</span> <span class="toc-text">$\lambda2$类型（$\lambda2$-types）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二阶预定型项（Second-order-pre-typed-lambda-terms-lambda2-terms-Lambda-mathbb-T2-）"><span class="toc-number">4.2.</span> <span class="toc-text">二阶预定型项（Second order pre-typed $\lambda$-terms, $\lambda2$-terms, $\Lambda_\mathbb{T2}$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#陈述，声明（Statement-declaration）"><span class="toc-number">4.3.</span> <span class="toc-text">陈述，声明（Statement, declaration）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lambda2-上下文、定义域（-lambda2-context-domain-rm-dom-）"><span class="toc-number">4.4.</span> <span class="toc-text">$\lambda2$上下文、定义域（$\lambda2$-context; domain; ${\rm dom}$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lambda2-的-var-法则（Var-rule-for-lambda2-）"><span class="toc-number">4.5.</span> <span class="toc-text">$\lambda2$的$(var)$法则（Var-rule for $\lambda2$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#form-法则（Formation-rule）"><span class="toc-number">4.6.</span> <span class="toc-text">$(form)$法则（Formation rule）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合法的-lambda2-项（Legal-lambda2-terms）"><span class="toc-number">4.7.</span> <span class="toc-text">合法的$\lambda2$项（Legal $\lambda2$-terms）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda2-中的派生例"><span class="toc-number">5.</span> <span class="toc-text">$\lambda2$中的派生例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda2-的性质"><span class="toc-number">6.</span> <span class="toc-text">$\lambda2$的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Alpha替换-Alpha等价推广（α-conversion-α-equivalence-extended）"><span class="toc-number">6.1.</span> <span class="toc-text">Alpha替换/Alpha等价推广（α-conversion/α-equivalence, extended）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mathbb-Lambda-2-项的单步Beta归约（One-step-beta-reduction-to-beta-for-mathbb-Lambda-2-terms）"><span class="toc-number">6.2.</span> <span class="toc-text">$\mathbb{\Lambda_2}$项的单步Beta归约（One-step $\beta$-reduction, $\to_\beta$for $\mathbb{\Lambda_2}$-terms）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lambda2-中依然成立的引理"><span class="toc-number">6.3.</span> <span class="toc-text">$\lambda2$中依然成立的引理</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -417,7 +532,7 @@
 <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2018/01/30/【动态规划】滑雪/",
+  id: "http://yoursite.com/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/",
   owner: 'salty-Frankenstein',
   repo: 'hello',
   oauth: {
