@@ -5,18 +5,18 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://121.5.103.67">
   <title>【类型论】二、Simply typed lambda calculus | 地灵殿</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  简单类型（Simple types）我们从一个类型变量（type variables）的无限集开始：$\mathbb{V}=\lbrace \alpha,\beta,\gamma,…\rbrace$. 所有简单类型的集合$\mathbb{T}$ 类型变量（Type variab">
 <meta name="keywords" content="函数式,教程,类型论">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【类型论】二、Simply typed lambda calculus">
-<meta property="og:url" content="http://yoursite.com/2021/03/06/【类型论】二、Simply-typed-lambda-calculus/index.html">
+<meta property="og:url" content="https://121.5.103.67/2021/03/06/【类型论】二、Simply-typed-lambda-calculus/index.html">
 <meta property="og:site_name" content="地灵殿">
 <meta property="og:description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  简单类型（Simple types）我们从一个类型变量（type variables）的无限集开始：$\mathbb{V}=\lbrace \alpha,\beta,\gamma,…\rbrace$. 所有简单类型的集合$\mathbb{T}$ 类型变量（Type variab">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-03-13T12:08:51.364Z">
+<meta property="og:updated_time" content="2021-04-05T12:18:56.844Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【类型论】二、Simply typed lambda calculus">
 <meta name="twitter:description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  简单类型（Simple types）我们从一个类型变量（type variables）的无限集开始：$\mathbb{V}=\lbrace \alpha,\beta,\gamma,…\rbrace$. 所有简单类型的集合$\mathbb{T}$ 类型变量（Type variab">
@@ -232,7 +232,7 @@
 <li>类型变量（Type variable）若$\alpha \in \mathbb{V}$，则$\alpha \in \mathbb{T}$</li>
 <li>箭头类型（Arrow type）若$\sigma,\tau \in \mathbb{T}$，则$(\sigma \to \tau) \in \mathbb{T}$</li>
 </ol>
-<p>即 $\mathbb{T= V\ |\ T \to T}$ .</p>
+<p>即 $\mathbb{T= V\ \mid\ T \to T}$ .</p>
 <a id="more"></a>
 
 <p>记法：使用字母$\alpha,\beta,…$表示$\mathbb{V}$中的类型变量，$\sigma,\tau,…$（有时也用$A,B,…$）表示一个简单类型. 最外侧的括号可以省略. 箭头是右结合的.</p>
@@ -269,7 +269,7 @@
 <p>对于项$(\lambda zu.z)(yx)$，$z,u$是绑定的，而$x,y$是自由的. 假设$z:\beta$且$u:\gamma$，我们记作$(\lambda z:\beta.\lambda u:\gamma.z)(yx)$.</p>
 <p>对于此例的上下文，记作：</p>
 <p>$x:\alpha \to \alpha,y:(\alpha \to \alpha) \to \beta \ \vdash\  (\lambda z:\beta.\lambda u:\gamma.z)(yx):\gamma \to \beta$.</p>
-<h2 id="Church的-lambda-to-的派生法则"><a href="#Church的-lambda-to-的派生法则" class="headerlink" title="Church的$\lambda{\to}$的派生法则"></a>Church的$\lambda{\to}$的派生法则</h2><h3 id="预标注类型的lambda项（Pre-typed-λ-terms-Lambda-mathbb-T-）"><a href="#预标注类型的lambda项（Pre-typed-λ-terms-Lambda-mathbb-T-）" class="headerlink" title="预标注类型的lambda项（Pre-typed λ-terms,$\Lambda_\mathbb{T}$）"></a>预标注类型的lambda项（Pre-typed λ-terms,$\Lambda_\mathbb{T}$）</h3><p>$\Lambda_\mathbb{T}=V|(\Lambda_\mathbb{T}\Lambda_\mathbb{T})|(\lambda V:\mathbb{T}.\Lambda_\mathbb{T})$.</p>
+<h2 id="Church的-lambda-to-的派生法则"><a href="#Church的-lambda-to-的派生法则" class="headerlink" title="Church的$\lambda{\to}$的派生法则"></a>Church的$\lambda{\to}$的派生法则</h2><h3 id="预标注类型的lambda项（Pre-typed-λ-terms-Lambda-mathbb-T-）"><a href="#预标注类型的lambda项（Pre-typed-λ-terms-Lambda-mathbb-T-）" class="headerlink" title="预标注类型的lambda项（Pre-typed λ-terms,$\Lambda_\mathbb{T}$）"></a>预标注类型的lambda项（Pre-typed λ-terms,$\Lambda_\mathbb{T}$）</h3><p>$\Lambda_\mathbb{T}=V\mid(\Lambda_\mathbb{T}\Lambda_\mathbb{T})\mid(\lambda V:\mathbb{T}.\Lambda_\mathbb{T})$.</p>
 <h3 id="陈述，声明，上下文，推断（Statement-declaration-context-judgement）"><a href="#陈述，声明，上下文，推断（Statement-declaration-context-judgement）" class="headerlink" title="陈述，声明，上下文，推断（Statement, declaration, context, judgement）"></a>陈述，声明，上下文，推断（Statement, declaration, context, judgement）</h3><ol>
 <li><strong>陈述</strong>（statement）具有形式$M:\sigma$，其中$M \in \Lambda_\mathbb{T}$且$\sigma \in \mathbb{T}$. 在陈述中，称$M$主体（subject），$\sigma$为类型.</li>
 <li><strong>声明</strong>（declaration）是以变量为主体的陈述.</li>
@@ -366,7 +366,7 @@
 </ol>
 <h3 id="自由变量引理-Free-Variables-Lemma"><a href="#自由变量引理-Free-Variables-Lemma" class="headerlink" title="自由变量引理 (Free Variables Lemma)"></a><strong>自由变量引理</strong> <em>(Free Variables Lemma)</em></h3><p>若$\Gamma \vdash L:\sigma$，则$FV(L)\subseteq {\rm dom}(\Gamma)$.</p>
 <p>这说明，如果$L$有类型，则所有在$L$中出现的自由变量$x$都有类型，且作为一条声明$x:\sigma$记录在上下文$\Gamma$中.</p>
-<h3 id="引理-Thinning-Condensing-Permutation"><a href="#引理-Thinning-Condensing-Permutation" class="headerlink" title="引理(Thinning, Condensing, Permutation)"></a>引理<em>(Thinning, Condensing, Permutation)</em></h3><ol>
+<h3 id="引理-Thinning-Condensing-Permutation"><a href="#引理-Thinning-Condensing-Permutation" class="headerlink" title="引理 (Thinning, Condensing, Permutation)"></a>引理 <em>(Thinning, Condensing, Permutation)</em></h3><ol>
 <li>（Thinning）令$\Gamma’$与$\Gamma’’$是上下文，使得$\Gamma’ \subseteq \Gamma’’$. 若$\Gamma’ \vdash M:\sigma$则$\Gamma’’ \vdash M:\sigma$.</li>
 <li>（Condensing）若$\Gamma \vdash M:\sigma$，则$\Gamma \upharpoonright FV(M) \vdash M:\sigma$.</li>
 <li>（Permutation）若$\Gamma \vdash M:\sigma$，且$\Gamma’$是$\Gamma$的一个permutation，则$\Gamma’$也是上下文，且$\Gamma’ \vdash M:\sigma$.</li>
@@ -525,7 +525,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/03/06/【类型论】二、Simply-typed-lambda-calculus/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://121.5.103.67/2021/03/06/【类型论】二、Simply-typed-lambda-calculus/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -577,7 +577,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简单类型（Simple-types）"><span class="toc-number">1.</span> <span class="toc-text">简单类型（Simple types）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#所有简单类型的集合-mathbb-T"><span class="toc-number">1.1.</span> <span class="toc-text">所有简单类型的集合$\mathbb{T}$</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可定型的项（Typable-term）"><span class="toc-number">1.2.</span> <span class="toc-text">可定型的项（Typable term）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Church定型与Curry定型（Church-typing-and-Curry-typing）"><span class="toc-number">2.</span> <span class="toc-text">Church定型与Curry定型（Church-typing and Curry-typing）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Church定型（Typing-a-la-Church）"><span class="toc-number">2.1.</span> <span class="toc-text">Church定型（Typing à la Church）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Curry定型（Typing-a-la-Curry）"><span class="toc-number">2.2.</span> <span class="toc-text">Curry定型（Typing à la Curry）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Church的-lambda-to-的派生法则"><span class="toc-number">3.</span> <span class="toc-text">Church的$\lambda{\to}$的派生法则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#预标注类型的lambda项（Pre-typed-λ-terms-Lambda-mathbb-T-）"><span class="toc-number">3.1.</span> <span class="toc-text">预标注类型的lambda项（Pre-typed λ-terms,$\Lambda_\mathbb{T}$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#陈述，声明，上下文，推断（Statement-declaration-context-judgement）"><span class="toc-number">3.2.</span> <span class="toc-text">陈述，声明，上下文，推断（Statement, declaration, context, judgement）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Church的-lambda-to-的派生法则（Derivation-rules-for-lambda-to-）"><span class="toc-number">3.3.</span> <span class="toc-text">Church的$\lambda{\to}$的派生法则（Derivation rules for $\lambda{\to}$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合法的-lambda-to-项（Legal-lambda-to-terms）"><span class="toc-number">3.4.</span> <span class="toc-text">合法的$\lambda{\to}$项（Legal $\lambda{\to}$-terms）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类型论需要解决的几类问题"><span class="toc-number">4.</span> <span class="toc-text">类型论需要解决的几类问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#良类型性-可定型性（Well-typedness-Typability）"><span class="toc-number">4.1.</span> <span class="toc-text">良类型性/可定型性（Well-typedness/Typability）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类型检查（Type-Checking）"><span class="toc-number">4.2.</span> <span class="toc-text">类型检查（Type Checking）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项的寻找（Term-Finding-Term-Construction-Inhabitation）"><span class="toc-number">4.3.</span> <span class="toc-text">项的寻找（Term Finding/Term Construction/Inhabitation）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda-to-中的良类型性"><span class="toc-number">5.</span> <span class="toc-text">$\lambda{\to}$中的良类型性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda-to-中的类型检查"><span class="toc-number">6.</span> <span class="toc-text">$\lambda{\to}$中的类型检查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda-to-中项的寻找"><span class="toc-number">7.</span> <span class="toc-text">$\lambda{\to}$中项的寻找</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda-to-的性质"><span class="toc-number">8.</span> <span class="toc-text">$\lambda{\to}$的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义域，子上下文，置换，投影（Domain-rm-dom-subcontext-subseteq-permutation-projection-upharpoonright-）"><span class="toc-number">8.1.</span> <span class="toc-text">定义域，子上下文，置换，投影（Domain, $\rm dom$, subcontext, $\subseteq$, permutation, projection, $\upharpoonright$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自由变量引理-Free-Variables-Lemma"><span class="toc-number">8.2.</span> <span class="toc-text">自由变量引理 (Free Variables Lemma)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引理-Thinning-Condensing-Permutation"><span class="toc-number">8.3.</span> <span class="toc-text">引理(Thinning, Condensing, Permutation)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成引理（Generation-Lemma）"><span class="toc-number">8.4.</span> <span class="toc-text">生成引理（Generation Lemma）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#子项引理（Subterm-Lemma）"><span class="toc-number">8.5.</span> <span class="toc-text">子项引理（Subterm Lemma）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类型唯一性（Uniqueness-of-Types）"><span class="toc-number">8.6.</span> <span class="toc-text">类型唯一性（Uniqueness of Types）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可判定性定理"><span class="toc-number">8.7.</span> <span class="toc-text">可判定性定理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#归约和-lambda-to"><span class="toc-number">9.</span> <span class="toc-text">归约和$\lambda{\to}$</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#代换引理（Substitution-Lemma）"><span class="toc-number">9.1.</span> <span class="toc-text">代换引理（Substitution Lemma）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对-mathbb-Lambda-T-的单步beta归约（-to-beta-for-mathbb-Lambda-T-）"><span class="toc-number">9.2.</span> <span class="toc-text">对$\mathbb{\Lambda_T}$的单步beta归约（$\to_\beta$, for $\mathbb{\Lambda_T}$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Church–Rosser定理"><span class="toc-number">9.3.</span> <span class="toc-text">Church–Rosser定理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#主体归约引理（Subject-Reduction）"><span class="toc-number">9.4.</span> <span class="toc-text">主体归约引理（Subject Reduction）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#强标准定理-终止定理（Strong-Normalisation-Theorem-Termination-Theorem）"><span class="toc-number">9.5.</span> <span class="toc-text">强标准定理/终止定理（Strong Normalisation Theorem/Termination Theorem）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论"><span class="toc-number">10.</span> <span class="toc-text">结论</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简单类型（Simple-types）"><span class="toc-number">1.</span> <span class="toc-text">简单类型（Simple types）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#所有简单类型的集合-mathbb-T"><span class="toc-number">1.1.</span> <span class="toc-text">所有简单类型的集合$\mathbb{T}$</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可定型的项（Typable-term）"><span class="toc-number">1.2.</span> <span class="toc-text">可定型的项（Typable term）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Church定型与Curry定型（Church-typing-and-Curry-typing）"><span class="toc-number">2.</span> <span class="toc-text">Church定型与Curry定型（Church-typing and Curry-typing）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Church定型（Typing-a-la-Church）"><span class="toc-number">2.1.</span> <span class="toc-text">Church定型（Typing à la Church）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Curry定型（Typing-a-la-Curry）"><span class="toc-number">2.2.</span> <span class="toc-text">Curry定型（Typing à la Curry）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Church的-lambda-to-的派生法则"><span class="toc-number">3.</span> <span class="toc-text">Church的$\lambda{\to}$的派生法则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#预标注类型的lambda项（Pre-typed-λ-terms-Lambda-mathbb-T-）"><span class="toc-number">3.1.</span> <span class="toc-text">预标注类型的lambda项（Pre-typed λ-terms,$\Lambda_\mathbb{T}$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#陈述，声明，上下文，推断（Statement-declaration-context-judgement）"><span class="toc-number">3.2.</span> <span class="toc-text">陈述，声明，上下文，推断（Statement, declaration, context, judgement）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Church的-lambda-to-的派生法则（Derivation-rules-for-lambda-to-）"><span class="toc-number">3.3.</span> <span class="toc-text">Church的$\lambda{\to}$的派生法则（Derivation rules for $\lambda{\to}$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合法的-lambda-to-项（Legal-lambda-to-terms）"><span class="toc-number">3.4.</span> <span class="toc-text">合法的$\lambda{\to}$项（Legal $\lambda{\to}$-terms）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类型论需要解决的几类问题"><span class="toc-number">4.</span> <span class="toc-text">类型论需要解决的几类问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#良类型性-可定型性（Well-typedness-Typability）"><span class="toc-number">4.1.</span> <span class="toc-text">良类型性/可定型性（Well-typedness/Typability）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类型检查（Type-Checking）"><span class="toc-number">4.2.</span> <span class="toc-text">类型检查（Type Checking）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项的寻找（Term-Finding-Term-Construction-Inhabitation）"><span class="toc-number">4.3.</span> <span class="toc-text">项的寻找（Term Finding/Term Construction/Inhabitation）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda-to-中的良类型性"><span class="toc-number">5.</span> <span class="toc-text">$\lambda{\to}$中的良类型性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda-to-中的类型检查"><span class="toc-number">6.</span> <span class="toc-text">$\lambda{\to}$中的类型检查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda-to-中项的寻找"><span class="toc-number">7.</span> <span class="toc-text">$\lambda{\to}$中项的寻找</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lambda-to-的性质"><span class="toc-number">8.</span> <span class="toc-text">$\lambda{\to}$的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义域，子上下文，置换，投影（Domain-rm-dom-subcontext-subseteq-permutation-projection-upharpoonright-）"><span class="toc-number">8.1.</span> <span class="toc-text">定义域，子上下文，置换，投影（Domain, $\rm dom$, subcontext, $\subseteq$, permutation, projection, $\upharpoonright$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自由变量引理-Free-Variables-Lemma"><span class="toc-number">8.2.</span> <span class="toc-text">自由变量引理 (Free Variables Lemma)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引理-Thinning-Condensing-Permutation"><span class="toc-number">8.3.</span> <span class="toc-text">引理 (Thinning, Condensing, Permutation)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成引理（Generation-Lemma）"><span class="toc-number">8.4.</span> <span class="toc-text">生成引理（Generation Lemma）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#子项引理（Subterm-Lemma）"><span class="toc-number">8.5.</span> <span class="toc-text">子项引理（Subterm Lemma）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类型唯一性（Uniqueness-of-Types）"><span class="toc-number">8.6.</span> <span class="toc-text">类型唯一性（Uniqueness of Types）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可判定性定理"><span class="toc-number">8.7.</span> <span class="toc-text">可判定性定理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#归约和-lambda-to"><span class="toc-number">9.</span> <span class="toc-text">归约和$\lambda{\to}$</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#代换引理（Substitution-Lemma）"><span class="toc-number">9.1.</span> <span class="toc-text">代换引理（Substitution Lemma）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对-mathbb-Lambda-T-的单步beta归约（-to-beta-for-mathbb-Lambda-T-）"><span class="toc-number">9.2.</span> <span class="toc-text">对$\mathbb{\Lambda_T}$的单步beta归约（$\to_\beta$, for $\mathbb{\Lambda_T}$）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Church–Rosser定理"><span class="toc-number">9.3.</span> <span class="toc-text">Church–Rosser定理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#主体归约引理（Subject-Reduction）"><span class="toc-number">9.4.</span> <span class="toc-text">主体归约引理（Subject Reduction）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#强标准定理-终止定理（Strong-Normalisation-Theorem-Termination-Theorem）"><span class="toc-number">9.5.</span> <span class="toc-text">强标准定理/终止定理（Strong Normalisation Theorem/Termination Theorem）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论"><span class="toc-number">10.</span> <span class="toc-text">结论</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -602,7 +602,7 @@
 <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2021/03/06/【类型论】二、Simply-typed-lambda-calculus/",
+  id: "https://121.5.103.67/2021/03/06/【类型论】二、Simply-typed-lambda-calculus/",
   owner: 'salty-Frankenstein',
   repo: 'hello',
   oauth: {
@@ -775,19 +775,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">前缀和</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">模板</a>
+                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">树形DP</a>
+                <a href="javascript:void(0)" class="js-tag color3">模板</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -799,6 +795,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">树形DP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">字符串</a>
               </li>
              
@@ -807,11 +807,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">并查集</a>
+                <a href="javascript:void(0)" class="js-tag color4">bfs</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">bfs</a>
+                <a href="javascript:void(0)" class="js-tag color4">并查集</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -839,23 +839,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">模拟</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">网络流</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图论</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">二分答案</a>
+                <a href="javascript:void(0)" class="js-tag color3">模拟</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -863,11 +851,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">堆</a>
+                <a href="javascript:void(0)" class="js-tag color3">图论</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">前向星</a>
+                <a href="javascript:void(0)" class="js-tag color4">网络流</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">二分答案</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">堆</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -883,6 +879,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">前向星</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">匈牙利算法</a>
               </li>
              
@@ -891,11 +891,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">对拍</a>
+                <a href="javascript:void(0)" class="js-tag color4">最短路</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">最短路</a>
+                <a href="javascript:void(0)" class="js-tag color3">对拍</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -903,19 +903,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">快速幂</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">最小生成树</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">题库</a>
+                <a href="javascript:void(0)" class="js-tag color4">快速幂</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">类型论</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">题库</a>
               </li>
              
               <li class="article-tag-list-item">

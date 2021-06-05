@@ -5,18 +5,18 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://121.5.103.67">
   <title>【类型论】三、Second order typed lambda calculus | 地灵殿</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  类型抽象和类型应用（Type-abstraction and type-application）对于抽象这个过程，我们有项$M$，其中可能有自由变量$x$，假设$x$有类型$\sigma$，我们从$M$中抽象$x$，可以得到项$\lambda x : \sigma.M$，同时，">
 <meta name="keywords" content="函数式,教程,类型论">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【类型论】三、Second order typed lambda calculus">
-<meta property="og:url" content="http://yoursite.com/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/index.html">
+<meta property="og:url" content="https://121.5.103.67/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/index.html">
 <meta property="og:site_name" content="地灵殿">
 <meta property="og:description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  类型抽象和类型应用（Type-abstraction and type-application）对于抽象这个过程，我们有项$M$，其中可能有自由变量$x$，假设$x$有类型$\sigma$，我们从$M$中抽象$x$，可以得到项$\lambda x : \sigma.M$，同时，">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-03-20T09:14:19.232Z">
+<meta property="og:updated_time" content="2021-04-05T12:01:49.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【类型论】三、Second order typed lambda calculus">
 <meta name="twitter:description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  类型抽象和类型应用（Type-abstraction and type-application）对于抽象这个过程，我们有项$M$，其中可能有自由变量$x$，假设$x$有类型$\sigma$，我们从$M$中抽象$x$，可以得到项$\lambda x : \sigma.M$，同时，">
@@ -262,8 +262,8 @@
 <p>当上下文中$M$有类型$A$且$\alpha$有类型$\ast$，则$\lambda \alpha:\ \ast.\ M$有类型$\Pi\alpha:\ast\ .A$. 新的地方是：我们允许二阶声明在上下文中.</p>
 <h3 id="二阶应用法则（Second-order-application-rule）"><a href="#二阶应用法则（Second-order-application-rule）" class="headerlink" title="二阶应用法则（Second order application rule）"></a>二阶应用法则（Second order application rule）</h3><p>$(appl_2)\ \dfrac{\Gamma\ \vdash\ M\ :\ \Pi\alpha:\ast.\ A\qquad\Gamma\ \vdash\ B:\ast}{\Gamma\ \vdash\ MB\ :\ A[\alpha:=B]}$</p>
 <h2 id="lambda2-系统（The-system-lambda2-）"><a href="#lambda2-系统（The-system-lambda2-）" class="headerlink" title="$\lambda2$系统（The system $\lambda2$）"></a>$\lambda2$系统（The system $\lambda2$）</h2><p>以下是$\lambda2$的完整定义：</p>
-<h3 id="lambda2-类型（-lambda2-types）"><a href="#lambda2-类型（-lambda2-types）" class="headerlink" title="$\lambda2$类型（$\lambda2$-types）"></a>$\lambda2$类型（$\lambda2$-types）</h3><p>$\mathbb{T2=V|(T2\to T2)|(\Pi V:*.T2)}$，其中$\mathbb{V}$是类型变量集合.</p>
-<h3 id="二阶预定型项（Second-order-pre-typed-lambda-terms-lambda2-terms-Lambda-mathbb-T2-）"><a href="#二阶预定型项（Second-order-pre-typed-lambda-terms-lambda2-terms-Lambda-mathbb-T2-）" class="headerlink" title="二阶预定型项（Second order pre-typed $\lambda$-terms, $\lambda2$-terms, $\Lambda_\mathbb{T2}$）"></a>二阶预定型项（Second order pre-typed $\lambda$-terms, $\lambda2$-terms, $\Lambda_\mathbb{T2}$）</h3><p>$\mathbb{\Lambda_{T2}}=V|(\mathbb{\Lambda_{T2}\Lambda_{T2}})|(\Lambda_\mathbb{T2}\mathbb{T2})|(\lambda V:\mathbb{T2.\Lambda_{T2}})|(\lambda\mathbb{V}:*.\Lambda_\mathbb{T2})$.</p>
+<h3 id="lambda2-类型（-lambda2-types）"><a href="#lambda2-类型（-lambda2-types）" class="headerlink" title="$\lambda2$类型（$\lambda2$-types）"></a>$\lambda2$类型（$\lambda2$-types）</h3><p>$\mathbb{T2=V\mid(T2\to T2)\mid(\Pi V:*.T2)}$，其中$\mathbb{V}$是类型变量集合.</p>
+<h3 id="二阶预定型项（Second-order-pre-typed-lambda-terms-lambda2-terms-Lambda-mathbb-T2-）"><a href="#二阶预定型项（Second-order-pre-typed-lambda-terms-lambda2-terms-Lambda-mathbb-T2-）" class="headerlink" title="二阶预定型项（Second order pre-typed $\lambda$-terms, $\lambda2$-terms, $\Lambda_\mathbb{T2}$）"></a>二阶预定型项（Second order pre-typed $\lambda$-terms, $\lambda2$-terms, $\Lambda_\mathbb{T2}$）</h3><p>$\mathbb{\Lambda_{T2}}=V\mid(\mathbb{\Lambda_{T2}\Lambda_{T2}})\mid(\Lambda_\mathbb{T2}\mathbb{T2})\mid(\lambda V:\mathbb{T2.\Lambda_{T2}})\mid(\lambda\mathbb{V}:*.\Lambda_\mathbb{T2})$.</p>
 <p>此时我们有两种变量：对象变量（object variables）$V$（如$x,\ y,\ \dots$）和类型变量（type variables）$\mathbb{V}$（如$\alpha,\ \beta,\ \dots$）. 我们有一阶抽象$(\lambda V:\mathbb{T2.\Lambda_{T2}})$和二阶抽象$(\lambda\mathbb{V}:*.\Lambda_\mathbb{T2})$，一阶应用$(\mathbb{\Lambda_{T2}\Lambda_{T2}})$和二阶应用$(\Lambda_\mathbb{T2}\mathbb{T2})$.</p>
 <h3 id="陈述，声明（Statement-declaration）"><a href="#陈述，声明（Statement-declaration）" class="headerlink" title="陈述，声明（Statement, declaration）"></a>陈述，声明（Statement, declaration）</h3><ol>
 <li><em>陈述（statement）</em>要么形如$M:\sigma$，其中$M\in\Lambda_\mathbb{T2}$且$\sigma:\mathbb{T2}$，要么形如$\sigma:\ast$，其中$\sigma \in \mathbb{T2}$.</li>
@@ -464,7 +464,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://121.5.103.67/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -477,6 +477,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/06/05/【函数式】如何使用子类型多态/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          【函数式】如何使用子类型多态
+        
+      </div>
+    </a>
   
   
     <a href="/2021/03/06/【类型论】二、Simply-typed-lambda-calculus/" id="article-nav-older" class="article-nav-link-wrap">
@@ -532,7 +541,7 @@
 <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/",
+  id: "https://121.5.103.67/2021/03/16/【类型论】三、Second-order-typed-lambda-calculus/",
   owner: 'salty-Frankenstein',
   repo: 'hello',
   oauth: {
@@ -705,19 +714,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">前缀和</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">模板</a>
+                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">树形DP</a>
+                <a href="javascript:void(0)" class="js-tag color3">模板</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -729,6 +734,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">树形DP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">字符串</a>
               </li>
              
@@ -737,11 +746,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">并查集</a>
+                <a href="javascript:void(0)" class="js-tag color4">bfs</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">bfs</a>
+                <a href="javascript:void(0)" class="js-tag color4">并查集</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -769,23 +778,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">模拟</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">网络流</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图论</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">二分答案</a>
+                <a href="javascript:void(0)" class="js-tag color3">模拟</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -793,11 +790,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">堆</a>
+                <a href="javascript:void(0)" class="js-tag color3">图论</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">前向星</a>
+                <a href="javascript:void(0)" class="js-tag color4">网络流</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">二分答案</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">堆</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -813,6 +818,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">前向星</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">匈牙利算法</a>
               </li>
              
@@ -821,11 +830,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">对拍</a>
+                <a href="javascript:void(0)" class="js-tag color4">最短路</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">最短路</a>
+                <a href="javascript:void(0)" class="js-tag color3">对拍</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -833,19 +842,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">快速幂</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">最小生成树</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">题库</a>
+                <a href="javascript:void(0)" class="js-tag color4">快速幂</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">类型论</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">题库</a>
               </li>
              
               <li class="article-tag-list-item">
