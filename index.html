@@ -192,135 +192,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-【函数式】lambda-calculus" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/09/29/【函数式】lambda-calculus/">【函数式】lambda calculus</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2021/09/29/【函数式】lambda-calculus/" class="archive-article-date">
-  	<time datetime="2021-09-29T08:57:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-	  
-	  
-	  
-        <h1 id="UTLC"><a href="#UTLC" class="headerlink" title="UTLC"></a>UTLC</h1><h2 id="构造"><a href="#构造" class="headerlink" title="构造"></a>构造</h2><p>首先定义语法：</p>
-<p>设V是<strong>变量集合</strong>，<strong>$\lambda$项集合</strong>$\Lambda$ 由以下三条规则定义：  </p>
-<ul>
-<li><strong>变量</strong>(variable)：若$v \in V$，则$v\in \Lambda$  </li>
-<li><strong>抽象</strong>(abstraction)：若$v \in V$且$t\in \Lambda$，则$\lambda v.t \in \Lambda$  </li>
-<li><strong>应用</strong>(application)：若$t_1,t_2\in \Lambda$，则$t_1\ t_2 \in \Lambda$  </li>
-</ul>
-<h3 id="语法等价"><a href="#语法等价" class="headerlink" title="语法等价"></a>语法等价</h3><p>对于$\lambda$项，有几种意义的“相等”。<br>首先，当两个$\lambda$项语法上的构造完全相同，即：<br>$$<br>\dfrac{}{v \equiv v} \<br>\ \<br>\dfrac{v \equiv v’\quad t \equiv t’}{\lambda v.t \equiv \lambda v’.t’} \<br>\ \<br>\dfrac{t_1\equiv t_1’\quad t_2 \equiv t_2’}{t_1\ t_2 \equiv t_1’\ t_2’}<br>$$</p>
-<p>称$t_1 \equiv t_2$为$t_1$与$t_2$<strong>语法等价</strong>.</p>
-<h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>其次是语义，求值是指对表达式应用<strong>求值规则</strong>，直到没有适用的规则所得到的结果，结果称为<strong>值</strong>。<br>对于$\lambda$项的求值有以下规则：  </p>
-<h3 id="自由变量"><a href="#自由变量" class="headerlink" title="自由变量"></a>自由变量</h3><p>对于一个$\lambda$项中出现的变量，可分为三种：</p>
-<ul>
-<li>对于形如$\lambda v.t$的项，紧跟在$\lambda$后的变量$v$称为<strong>绑定变量</strong>（binding variable）</li>
-<li>对于项$\lambda v.t$中$t$中出现的$v$，称为<strong>被绑定变量</strong>（bound variable）</li>
-<li>对于其余的变量，称为<strong>自由变量</strong>（free variable）  </li>
-</ul>
-<p>对于$\lambda$项$t$中的自由变量集合$FV(t)$形式化定义如下：  </p>
-<ul>
-<li>变量：若$v\in V$，则$FV(v)=\lbrace v \rbrace$</li>
-<li>抽象：$FV(\lambda v.t)=FV(t) -\lbrace v \rbrace$</li>
-<li>应用：$FV(t_1\ t_2)=FV(t_1) \cup FV(t_2)$</li>
-</ul>
-<h3 id="alpha-等价"><a href="#alpha-等价" class="headerlink" title="$\alpha$-等价"></a>$\alpha$-等价</h3><p>在$\lambda$演算的语义中，绑定变量可以任意替换而其语义不变：</p>
-<p>记$M^{x\to y}$为将$M$中所有自由变量$x$替换成$y$，若$y\notin FV(M)$，则有$\lambda x. M =_\alpha \lambda y. M^{x\to y}$. 这个操作称为$\alpha$<strong>-替换</strong>(alpha-conversion).</p>
-<p>$=_\alpha$为等价关系，称为$\alpha$<strong>-等价</strong>(alpha-equivalent)，在同一个$\alpha$等价类中的$\lambda$项也视为相等.</p>
-<h3 id="beta-归约"><a href="#beta-归约" class="headerlink" title="$\beta$-归约"></a>$\beta$-归约</h3><h4 id="代换-substitution"><a href="#代换-substitution" class="headerlink" title="代换(substitution)"></a>代换(substitution)</h4><p>将$M$中所有自由变量$x$<strong>代换</strong>为$N$，记为$M[N/x]$：</p>
-<ul>
-<li>a) $x[N/x] \equiv N$  b) $y[N/x] \equiv y$ ，若$x \not \equiv y$</li>
-<li>$(PQ)[N/x] \equiv (P[N/x])(Q[N/x])$</li>
-<li>$(\lambda y.P)[N/x] \equiv \lambda z.(P^{y \rightarrow z}[N/x])$，若$z \notin FV(N)$.</li>
-</ul>
-<h4 id="单步-beta-归约"><a href="#单步-beta-归约" class="headerlink" title="单步$\beta$-归约"></a>单步$\beta$-归约</h4><p>对于Lambda项的求值，值是$\beta-nf$的项。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">函数式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Haskell</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/小课堂//" class="article-tag-list-link color4">小课堂</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/09/29/【函数式】lambda-calculus/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-【函数式】如何使用子类型多态" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -440,99 +311,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-	  
-	  
-	  
         <p>本文为<em>Type Theory and Formal Proof : An Introduction</em> 的笔记，纯个人向（</p>
 <hr>
 <h2 id="类型构造子"><a href="#类型构造子" class="headerlink" title="类型构造子"></a>类型构造子</h2><p>之前我们从<em>项</em>$\lambda x:\sigma.x$中由类型变量抽象出$\lambda \alpha:\ast.\lambda x:\alpha.x$. 类似的，我们也可以从<em>类型</em>上抽象. 如类型$\beta\to\beta,\ \gamma\to\gamma,\ (\gamma\to\beta)\to(\gamma\to\beta),\ \dots$，都有$\Diamond\to\Diamond$这样的结构.</p>
-<p>我们引入一种表达式表示这个结构：$\lambda\alpha:\ast.\alpha\to\alpha$，它本身不是一个类型，但是一个<em>值</em>为类型的函数，因此称为<strong>类型构造子</strong>（type constructor）。喂给它东西，我们能得到类型：</p>
-<p>$(\lambda\alpha:\ast.\alpha\to\alpha)\beta\qquad\to_\beta\quad\beta\to\beta$</p>
-<p>$(\lambda\alpha:\ast.\alpha\to\alpha)\gamma\qquad\to_\beta\quad\gamma\to\gamma$</p>
-<p>$(\lambda\alpha:\ast.\alpha\to\alpha)(\gamma\to\beta)\qquad\to_\beta\quad(\gamma\to\beta)\to(\gamma\to\beta)$</p>
-<p>同理我们也可以构造$\lambda\alpha:\ast.\lambda\beta:\ast.\alpha\to\beta$.</p>
-<p>那么，这些类型构造子的<em>类型</em>是什么呢？$\lambda\alpha:\ast.\alpha\to\alpha$是一个将$\alpha$映射到$\alpha\to\alpha$的函数，因为$\alpha:\ast$且$\alpha\to\alpha:\ast$，我们有：</p>
-<p>$\lambda\alpha:\ast.\alpha\to\alpha\ :\ \ast\to\ast$. 因此我们需要一个“超类型”$\ast\to\ast$.</p>
-<p>同理有：</p>
-<p>$\lambda\alpha:\ast.\lambda\beta:\ast.\alpha\to\beta\ :\ \ast\to(\ast\to\ast)$.</p>
-<p>这一推广称<strong>依赖于类型的类型</strong>（types depending on types），这一系统称$\lambda\underline\omega$，包括$\ast$和带箭头的$\ast$称<strong>kind</strong>. 所有kind的集合是：</p>
-<p>$\mathbb{K=\ast\ \mid\ (K\to K)}$.</p>
-<p>箭头的结合性与简单类型一致.</p>
-<p>定义<strong>所有kind的类型</strong>（type of all kinds）记作$\square$，如$\ast:\square$、$\ast\to\ast:\square$等等. </p>
-<h3 id="构造子，真构造子，sort（Constructor-proper-constructor-sort）"><a href="#构造子，真构造子，sort（Constructor-proper-constructor-sort）" class="headerlink" title="构造子，真构造子，sort（Constructor, proper constructor, sort）"></a>构造子，真构造子，sort（Constructor, proper constructor, sort）</h3><ol>
-<li>若$\kappa:\square$且$M:\kappa$则$M$是<strong>构造子</strong>（constructor），若$\kappa\not\equiv\ast$，则$M$是<strong>真构造子</strong>（proper constructor）.</li>
-<li><strong>sort</strong>的集合为$\lbrace\ast,\ \square\rbrace$.</li>
-</ol>
-<p>我们保留符号$s$作为sort的元变量（即$s$表示$\ast$或$\square$）.</p>
-<h3 id="Levels"><a href="#Levels" class="headerlink" title="Levels"></a>Levels</h3><p>level 1：项</p>
-<p>level 2：构造子（即类型和真构造子）</p>
-<p>level 3：kinds</p>
-<p>level 4：即$\square$.</p>
-<p>由此我们可以写出<strong>推断链</strong>（judgement chains）如$t:\sigma:\ast\to\ast$，甚至$t:\sigma:\ast\to\ast:\square$. 当$\sigma$是一个真构造子，则它下面没有值：$\sigma:\kappa:\square$，其中例如$\kappa\equiv\ast\to\ast$. </p>
-<h2 id="lambda-underline-omega-中的Sort规则和var规则"><a href="#lambda-underline-omega-中的Sort规则和var规则" class="headerlink" title="$\lambda\underline\omega$中的Sort规则和var规则"></a>$\lambda\underline\omega$中的Sort规则和var规则</h2><p>$\lambda\underline\omega$是$\lambda{\to}$的另一种推广：</p>
-<ul>
-<li>$\lambda2=\lambda{\to}$加上 依赖于类型的<strong>项</strong>（<em>terms</em>-depending-on-types）</li>
-<li>$\lambda\underline\omega=\lambda{\to}$加上 依赖于类型的<strong>类型</strong>（<em>types</em>-depending-on-types）</li>
-</ul>
-<h3 id="Sort规则（Sort-rule）"><a href="#Sort规则（Sort-rule）" class="headerlink" title="Sort规则（Sort-rule）"></a>Sort规则（Sort-rule）</h3><p>$(sort)\quad\emptyset\ \vdash\ \ast\ :\ \square$.</p>
-<p>接下来我们想要所有出现在上下文中的声明都是可以从这个上下文中派生的. 在$\lambda{\to}$和$\lambda2$中，我们使用$(var)$规则. 在$\lambda\underline{\omega}$中，我们要结合上下文的声明和构造的可派生性. 这是因为$\lambda\underline{\omega}$的类型更加复杂，我们需要确保类型都是良形式的, 此时一个类型的推断与否不再是由一个外在的集合，而是由推断和它的上下文自身决定. 在当前的类型系统下的要求更严格一些，我们要求出现在推断中的类型必须都能被形式地派生出来.</p>
-<p>因此，只有在$A$类型可以被推断的时候，我们可以用一个声明$x:A$扩展一个上下文，且可以被推断的类型可以出现在level 2或者3上，也就是一个类型或者kind. 由此得到：</p>
-<h3 id="Var规则（Var-rule）"><a href="#Var规则（Var-rule）" class="headerlink" title="Var规则（Var-rule）"></a>Var规则（Var-rule）</h3><p>$(var)\quad\dfrac{\Gamma\ \vdash\ A:s}{\Gamma,\ x:A\ \vdash\ x:A}$，若$x\notin \Gamma$.</p>
-<p><strong>前提</strong>是$A$为type（$s\equiv\ast$）或kind（$s\equiv\square$）. $x$既可能是个项变量，也可能是个类型变量. $(var)$规则允许我们由声明$x:A$延伸上下文$\Gamma$，并将他作为这个延伸上下文的陈述.</p>
-<p>现在的问题是我们仅允许上下文的最后一个声明作派生，但：</p>
-<p>$(?_1)\ \alpha:\ast,\ x:\alpha\ \vdash\ \alpha:\ast$</p>
-<p>$(?_2)\ \alpha:\ast,\ \beta:\ast\ \vdash\ \alpha:\ast$</p>
-<p>这些暂时是无法派生的，甚至：</p>
-<p>$(?_3)\ \alpha:\ast,\ \beta:\ast\ \vdash\ \beta:\ast$</p>
-<p>也不行，因为我们还不能得到$（?_3）$需要的前提</p>
-<p>$(?_4)\ \alpha:\ast\ \vdash\ \ast:\square$</p>
-<p>因此我们引入：</p>
-<h2 id="lambda-underline-omega-弱化规则（weakening-rule）"><a href="#lambda-underline-omega-弱化规则（weakening-rule）" class="headerlink" title="$\lambda\underline\omega$弱化规则（weakening rule）"></a>$\lambda\underline\omega$弱化规则（weakening rule）</h2><h3 id="弱化规则（Weakening-rule）"><a href="#弱化规则（Weakening-rule）" class="headerlink" title="弱化规则（Weakening rule）"></a>弱化规则（Weakening rule）</h3><p>$(weak)\ \dfrac{\Gamma\ \vdash\ A:B\quad\Gamma\ \vdash\ C:s}{\Gamma,\ x:C\ \vdash\ A:B}$，若$x\notin\Gamma$.</p>
-<p>如果我们派生出$\Gamma\ \vdash\ A:B$这个推断（第一个前提），那么我们可以通过在这个上下文$\Gamma$的末尾增加任意的一条声明将其弱化.</p>
-<p>弱化规则对上下文的扩展只允许在最后，可以证明任意的扩展也都是可以的，也就是说Thinning Lemma对$\lambda\underline\omega$也成立.</p>
-<p>这样$(?_1)$就可以这样派生：</p>
-<p>$\dfrac{\dfrac{(1)\ \emptyset\ \vdash\ \ast:\square}{(2)\ \alpha:\ast\ \vdash\ \alpha:\ast}(var)\qquad\dfrac{(1)\ \emptyset\ \vdash\ \ast:\square}{(2)\ \alpha:\ast\ \vdash\ \alpha:\ast}(var)}{(4)\ \alpha:\ast,\ x:\alpha\ \vdash\ \alpha:\ast}(weak)$</p>
-<p>$(?_2)$和$(?_4)$的派生如下：</p>
-<p>$\dfrac{\dfrac{(1)\ \emptyset\ \vdash\ \ast:\square}{(2)\ \alpha:\ast\ \vdash\ \alpha:\ast}(var)\qquad\dfrac{(1)\ \emptyset\ \vdash\ \ast:\square\quad(1)\ \emptyset\ \vdash\ \ast:\square}{(5)\ \alpha:\ast\ \vdash\ \ast:\square}(weak)}{(6)\ \alpha:\ast,\ \beta:\ast\ \vdash\ \alpha:\ast}(weak)$</p>
-<p>$(?_3)$：</p>
-<p>$\dfrac{\dfrac{(1)\ \emptyset\ \vdash\ \ast：\square\quad(1)\ \emptyset\ \vdash\ \ast:\square}{(5)\ \alpha:\ast\ \vdash\ \ast:\square}(weak)}{(7)\ \alpha:\ast,\ \beta:\ast\ \vdash\ \beta:\ast}(var)$</p>
-<h2 id="lambda-underline-omega-的形成规则（Formation-rule）"><a href="#lambda-underline-omega-的形成规则（Formation-rule）" class="headerlink" title="$\lambda\underline\omega$的形成规则（Formation rule）"></a>$\lambda\underline\omega$的形成规则（Formation rule）</h2><p>在$\lambda 2$中，基于$\lambda 2$类型$\mathbb{T}2$，我们有$(form)$规则来构造上下文中的类型. 同样的，对于更加复杂的$\lambda\underline{\omega}$，我们需要一个真的有前提有结论的派生规则来构造类型.</p>
-<h3 id="形成规则（Formation-rule）"><a href="#形成规则（Formation-rule）" class="headerlink" title="形成规则（Formation rule）"></a>形成规则（Formation rule）</h3><p>$(form)\ \dfrac{\Gamma\ \vdash\ A:s\quad\Gamma\ \vdash\ B:s}{\Gamma\ \vdash\ A\to B:s}$</p>
-<p>这包含了所有的types和kinds. （注意到$\lambda\underline{\omega}$中没有$\Pi$-类型）</p>
-<p>例如：</p>
-<p>对于$s\equiv\ast$：</p>
-<p>$\dfrac{\dfrac{\cdots}{(6)\ \alpha:\ast,\ \beta:\ast\ \vdash\ \alpha:\ast}\quad\dfrac{\cdots}{(7)\ \alpha:\ast,\ \beta:\ast\ \vdash\ \beta:\ast}}{(8)\ \alpha:\ast,\ \beta:\ast\ \vdash \alpha \to\beta :\ast}(form)$</p>
-<p>对于$s\equiv\square$：</p>
-<p>$\dfrac{\dfrac{\cdots}{(5)\ \alpha:\ast\ \vdash\ \ast:\square}\quad\dfrac{\cdots}{(5)\ \alpha:\ast\ \vdash\ \ast:\square}}{(9)\ \alpha:\ast\ \vdash\ \ast\to\ast:\square}(form)$</p>
-<h2 id="lambda-underline-omega-的应用和抽象规则（Application-and-abstraction-rules）"><a href="#lambda-underline-omega-的应用和抽象规则（Application-and-abstraction-rules）" class="headerlink" title="$\lambda\underline\omega$的应用和抽象规则（Application and abstraction rules）"></a>$\lambda\underline\omega$的应用和抽象规则（Application and abstraction rules）</h2><p>$(appl)\ \dfrac{\Gamma\ \vdash\ M:A\to B\quad\Gamma\ \vdash\ N:A}{\Gamma\ \vdash\ M\ N:B}$</p>
-<p>$(abst)\ \dfrac{\Gamma,\ x:A\ \vdash\ M:B\quad\Gamma\ \vdash\ A\to B:s}{\Gamma\ \vdash\ \lambda x:A.\ M:A\to B}$  </p>
-<p>不同的是，在抽象规则中必须保证$A\to B$是一个良形式的类型.</p>
-<p>在引入$\lambda\underline{\omega}$的$\beta$-归约之前，先引入下例的派生：</p>
-<p>$(\lambda\alpha:\ast.\ \alpha\to\alpha)\ \beta\quad\to_\beta\quad\beta\to\beta$</p>
-<p>对于左边：</p>
-<p>$(10)\quad\beta:\ast\ \vdash\ \ast:\square\quad对(1)和(1)用(weak)$</p>
-<p>$(11)\quad\beta:\ast,\ \alpha:\ast\ \vdash\ \alpha:\ast\quad对(10)用(var)$</p>
-<p>$(12)\quad\beta:\ast,\ \alpha:\ast\ \vdash\ \alpha\to\alpha:\ast\quad对(11)和(11)用(form)$</p>
-<p>$(13)\quad\beta:\ast\ \vdash\ \ast\to\ast:\square\quad对(10)和(10)用(form)$</p>
-<p>$(14)\quad\beta:\ast\ \vdash\ \lambda\alpha:\ast.\ \alpha\to\alpha:\ast\to\ast\quad对(12)和(13)用(abst)$</p>
-<p>$(15)\quad\beta:\ast\ \vdash\ \beta:\ast\quad对(1)用(var)$</p>
-<p>$(16)\quad\beta:\ast\ \vdash\ (\lambda\alpha:\ast.\ \alpha\to\alpha)\ \beta:\ast\quad对(14)和(15)用(appl)$</p>
-<p>对于右边：</p>
-<p>$(17)\quad\beta:\ast\ \vdash\ \beta\to\beta:\ast\quad对(15)和(15)用(form)$</p>
-<h2 id="替换规则（Conversion-rules）"><a href="#替换规则（Conversion-rules）" class="headerlink" title="替换规则（Conversion rules）"></a>替换规则（Conversion rules）</h2><p>对于上面的例子，有</p>
-<p>$\beta:\ast,\ x:(\lambda\alpha:\ast.\ \alpha\to\alpha)\ \beta\ \vdash\ x:(\lambda\alpha:\ast.\ \alpha\to\alpha)\ \beta$</p>
-<p>我们想要得到：</p>
-<p>$\beta:\ast,\ x:(\lambda\alpha:\ast.\ \alpha\to\alpha)\ \beta\ \vdash\ x:\beta\to\beta$  </p>
-<p>我们需要一个推广的$\beta$-替换，使得若$M:B$且$B=_\beta B’$，则$M:B’$（$B$和$B’$都是良形式的）.  </p>
-<h3 id="替换规则（Conversion-rule）"><a href="#替换规则（Conversion-rule）" class="headerlink" title="替换规则（Conversion rule）"></a>替换规则（Conversion rule）</h3><p>$(conv)\ \dfrac{\Gamma\ \vdash\ A:B\quad\Gamma\ \vdash\ B’:s}{\Gamma\ \vdash\ A:B’}\quad若B=_\beta B’$</p>
-<p>第二个前提是必要的，考虑对任意$M$，$\beta \to \gamma =_\beta (\lambda\alpha: \ast.\ \beta\to\gamma)\ M$. 左边的$\beta\to\gamma$是良形式的，但当$M$没有$*$类型，右边的$(\lambda\alpha: \ast.\ \beta\to\gamma)\ M$就不是. </p>
-<p>例如：</p>
-<p>$\dfrac{(18)\ \Gamma\ \vdash\ x:(\lambda \alpha: \ast .\ \alpha\to\alpha)\ \beta\quad(19)\ \Gamma\ \vdash\ \beta \to \beta:\ast}{(20)\ \Gamma\ \vdash\ x:\beta\to\beta}\ (conv)$</p>
-<p>至此所有的$\lambda\underline{\omega}$的规则：</p>
-<p>$$<br>\begin{align}<br>(sort)&amp;\ \emptyset\ \vdash\ \ast:\square\<br>\ \<br>(var)&amp;\ \dfrac{\Gamma\ \vdash\ A:s}{\Gamma,\ x:A\ \vdash\ x:A}\quad若x\notin\Gamma \<br>\ \<br>(weak)&amp;\ \dfrac{\Gamma\ \vdash\ A:B\quad\Gamma\ \vdash\ C:s}{\Gamma,\ x:C\ \vdash\ A:B}\quad若x\notin\Gamma\<br>\ \<br>(form)&amp;\ \dfrac{\Gamma\ \vdash\ A:s\quad\Gamma\ \vdash\ B:s}{\Gamma\ \vdash\ A\to B:s}\<br>\ \<br>(appl)&amp;\ \dfrac{\Gamma\ \vdash\ M:A\to B\quad \Gamma\ \vdash\ N:A}{\Gamma\ \vdash\ M\ N:B}\<br>\ \<br>(abst)&amp;\ \dfrac{\Gamma,\ x:A\ \vdash\ M:B\quad\Gamma\ \vdash\ A\to\ B:s}{\Gamma\ \vdash\ \lambda x:A.\ M\ :\ A\to B}\<br>\ \<br>(conv)&amp;\ \dfrac{\Gamma\ \vdash\ A:B\quad\Gamma\ \vdash\ B’:s}{\Gamma\ \vdash\ A:B’}\quad若B=_\beta B’<br>\end{align}<br>$$</p>
-<h2 id="lambda-underline-omega-的性质"><a href="#lambda-underline-omega-的性质" class="headerlink" title="$\lambda\underline{\omega}$的性质"></a>$\lambda\underline{\omega}$的性质</h2><p>$\lambda\underline{\omega}$系统满足之前系统的大部分性质，除了需要对类型唯一性作一些调整：类型不一定字面上唯一，但在替换意义上唯一.</p>
-<h3 id="替换上类型的唯一性"><a href="#替换上类型的唯一性" class="headerlink" title="替换上类型的唯一性"></a>替换上类型的唯一性</h3><p>$若\Gamma\vdash A :B_1 且 \Gamma\vdash A:B_2，则B_1=_\beta B_2$.  </p>
-
+        
+          <a class="article-more-a" href="/2021/03/22/【类型论】四、Types-dependent-on-types/#more">more >></a>
+        
       
 
       
@@ -1312,9 +1096,107 @@
 
 
   
+    <article id="post-【杂记】Fr2D开发笔记（三）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/03/【杂记】Fr2D开发笔记（三）/">【Fr2D开发笔记】三、Direct2D初始化</a>
+    </h1>
+  
+
+        
+        
+
+<a href="/2019/08/03/【杂记】Fr2D开发笔记（三）/" class="archive-article-date">
+  	<time datetime="2019-08-03T13:25:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>创建好一个窗体后，就可以使用Direct2D绘制了。</p>
+<p>Direct2D程序需要包含头文件d2d1.h，和静态库d2d1.lib。这里简单介绍一下Direct2D程序初始化过程。</p>
+        
+          <a class="article-more-a" href="/2019/08/03/【杂记】Fr2D开发笔记（三）/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Fr2D开发笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">图形学</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">DirectX</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/开发笔记//" class="article-tag-list-link color5">开发笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/03/【杂记】Fr2D开发笔记（三）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -1487,11 +1369,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">模板</a>
+                <a href="javascript:void(0)" class="js-tag color5">树形DP</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">树形DP</a>
+                <a href="javascript:void(0)" class="js-tag color3">模板</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1543,19 +1425,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">模拟</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">网络流</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图论</a>
+                <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1563,7 +1437,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">二分答案</a>
+                <a href="javascript:void(0)" class="js-tag color3">图论</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">网络流</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">前向星</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1571,7 +1453,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">前向星</a>
+                <a href="javascript:void(0)" class="js-tag color5">二分答案</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">匈牙利算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">二分图匹配</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1584,14 +1474,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">线段树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">匈牙利算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">二分图匹配</a>
               </li>
              
               <li class="article-tag-list-item">

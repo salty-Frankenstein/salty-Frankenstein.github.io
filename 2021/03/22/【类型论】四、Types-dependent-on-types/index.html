@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="地灵殿">
 <meta property="og:description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  类型构造子之前我们从项$\lambda x:\sigma.x$中由类型变量抽象出$\lambda \alpha:\ast.\lambda x:\alpha.x$. 类似的，我们也可以从类型上抽象. 如类型$\beta\to\beta,\ \gamma\to\gamma,\ (\">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-11-01T14:07:57.443Z">
+<meta property="og:updated_time" content="2021-11-03T12:15:03.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【类型论】四、Types dependent on types">
 <meta name="twitter:description" content="本文为Type Theory and Formal Proof : An Introduction 的笔记，纯个人向（  类型构造子之前我们从项$\lambda x:\sigma.x$中由类型变量抽象出$\lambda \alpha:\ast.\lambda x:\alpha.x$. 类似的，我们也可以从类型上抽象. 如类型$\beta\to\beta,\ \gamma\to\gamma,\ (\">
@@ -228,6 +228,8 @@
         <p>本文为<em>Type Theory and Formal Proof : An Introduction</em> 的笔记，纯个人向（</p>
 <hr>
 <h2 id="类型构造子"><a href="#类型构造子" class="headerlink" title="类型构造子"></a>类型构造子</h2><p>之前我们从<em>项</em>$\lambda x:\sigma.x$中由类型变量抽象出$\lambda \alpha:\ast.\lambda x:\alpha.x$. 类似的，我们也可以从<em>类型</em>上抽象. 如类型$\beta\to\beta,\ \gamma\to\gamma,\ (\gamma\to\beta)\to(\gamma\to\beta),\ \dots$，都有$\Diamond\to\Diamond$这样的结构.</p>
+<a id="more"></a>
+
 <p>我们引入一种表达式表示这个结构：$\lambda\alpha:\ast.\alpha\to\alpha$，它本身不是一个类型，但是一个<em>值</em>为类型的函数，因此称为<strong>类型构造子</strong>（type constructor）。喂给它东西，我们能得到类型：</p>
 <p>$(\lambda\alpha:\ast.\alpha\to\alpha)\beta\qquad\to_\beta\quad\beta\to\beta$</p>
 <p>$(\lambda\alpha:\ast.\alpha\to\alpha)\gamma\qquad\to_\beta\quad\gamma\to\gamma$</p>
@@ -686,11 +688,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">模板</a>
+                <a href="javascript:void(0)" class="js-tag color5">树形DP</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">树形DP</a>
+                <a href="javascript:void(0)" class="js-tag color3">模板</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -742,19 +744,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">模拟</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">网络流</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图论</a>
+                <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -762,7 +756,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">二分答案</a>
+                <a href="javascript:void(0)" class="js-tag color3">图论</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">网络流</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">前向星</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -770,7 +772,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">前向星</a>
+                <a href="javascript:void(0)" class="js-tag color5">二分答案</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">匈牙利算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">二分图匹配</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -783,14 +793,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">线段树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">匈牙利算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">二分图匹配</a>
               </li>
              
               <li class="article-tag-list-item">
