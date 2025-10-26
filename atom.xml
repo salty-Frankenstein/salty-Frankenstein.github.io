@@ -3,11 +3,11 @@
   <title>地灵殿</title>
   
   <subtitle>Frankenstein&#39;s blog</subtitle>
-  <link href="https://121.5.103.67/atom.xml" rel="self"/>
+  <link href="https://salty-frankenstein.github.io/atom.xml" rel="self"/>
   
-  <link href="https://121.5.103.67/"/>
+  <link href="https://salty-frankenstein.github.io/"/>
   <updated>2025-09-24T14:07:32.263Z</updated>
-  <id>https://121.5.103.67/</id>
+  <id>https://salty-frankenstein.github.io/</id>
   
   <author>
     <name>Frankenstein</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>【欧卡猫】OCaml，启动！</title>
-    <link href="https://121.5.103.67/2025/09/24/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91OCaml%EF%BC%8C%E5%90%AF%E5%8A%A8%EF%BC%81/"/>
-    <id>https://121.5.103.67/2025/09/24/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91OCaml%EF%BC%8C%E5%90%AF%E5%8A%A8%EF%BC%81/</id>
+    <link href="https://salty-frankenstein.github.io/2025/09/24/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91OCaml%EF%BC%8C%E5%90%AF%E5%8A%A8%EF%BC%81/"/>
+    <id>https://salty-frankenstein.github.io/2025/09/24/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91OCaml%EF%BC%8C%E5%90%AF%E5%8A%A8%EF%BC%81/</id>
     <published>2025-09-24T12:12:15.000Z</published>
     <updated>2025-09-24T14:07:32.263Z</updated>
     
@@ -30,21 +30,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="Haskell" scheme="https://121.5.103.67/tags/Haskell/"/>
+    <category term="Haskell" scheme="https://salty-frankenstein.github.io/tags/Haskell/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【杂记】折腾终端</title>
-    <link href="https://121.5.103.67/2025/09/20/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91%E6%8A%98%E8%85%BE%E7%BB%88%E7%AB%AF/"/>
-    <id>https://121.5.103.67/2025/09/20/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91%E6%8A%98%E8%85%BE%E7%BB%88%E7%AB%AF/</id>
+    <link href="https://salty-frankenstein.github.io/2025/09/20/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91%E6%8A%98%E8%85%BE%E7%BB%88%E7%AB%AF/"/>
+    <id>https://salty-frankenstein.github.io/2025/09/20/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91%E6%8A%98%E8%85%BE%E7%BB%88%E7%AB%AF/</id>
     <published>2025-09-19T16:17:13.000Z</published>
     <updated>2025-09-20T15:46:10.109Z</updated>
     
@@ -56,16 +56,16 @@
     
     
     
-    <category term="杂记" scheme="https://121.5.103.67/tags/%E6%9D%82%E8%AE%B0/"/>
+    <category term="杂记" scheme="https://salty-frankenstein.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
     
-    <category term="linux" scheme="https://121.5.103.67/tags/linux/"/>
+    <category term="linux" scheme="https://salty-frankenstein.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>【函数式】免费的递归类型？</title>
-    <link href="https://121.5.103.67/2025/07/10/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E5%85%8D%E8%B4%B9%E7%9A%84%E9%80%92%E5%BD%92%E7%B1%BB%E5%9E%8B%EF%BC%9F/"/>
-    <id>https://121.5.103.67/2025/07/10/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E5%85%8D%E8%B4%B9%E7%9A%84%E9%80%92%E5%BD%92%E7%B1%BB%E5%9E%8B%EF%BC%9F/</id>
+    <link href="https://salty-frankenstein.github.io/2025/07/10/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E5%85%8D%E8%B4%B9%E7%9A%84%E9%80%92%E5%BD%92%E7%B1%BB%E5%9E%8B%EF%BC%9F/"/>
+    <id>https://salty-frankenstein.github.io/2025/07/10/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E5%85%8D%E8%B4%B9%E7%9A%84%E9%80%92%E5%BD%92%E7%B1%BB%E5%9E%8B%EF%BC%9F/</id>
     <published>2025-07-10T13:18:53.000Z</published>
     <updated>2025-07-14T12:38:08.912Z</updated>
     
@@ -76,21 +76,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="Haskell" scheme="https://121.5.103.67/tags/Haskell/"/>
+    <category term="Haskell" scheme="https://salty-frankenstein.github.io/tags/Haskell/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【PL】Type-Level Programming with Match Types</title>
-    <link href="https://121.5.103.67/2022/03/01/%E3%80%90PL%E3%80%91Type-Level-Programming-with-Match-Types/"/>
-    <id>https://121.5.103.67/2022/03/01/%E3%80%90PL%E3%80%91Type-Level-Programming-with-Match-Types/</id>
+    <link href="https://salty-frankenstein.github.io/2022/03/01/%E3%80%90PL%E3%80%91Type-Level-Programming-with-Match-Types/"/>
+    <id>https://salty-frankenstein.github.io/2022/03/01/%E3%80%90PL%E3%80%91Type-Level-Programming-with-Match-Types/</id>
     <published>2022-03-01T06:34:23.000Z</published>
     <updated>2022-03-01T13:05:24.018Z</updated>
     
@@ -106,21 +106,21 @@
     
     
     
-    <category term="PL研究" scheme="https://121.5.103.67/categories/PL%E7%A0%94%E7%A9%B6/"/>
+    <category term="PL研究" scheme="https://salty-frankenstein.github.io/categories/PL%E7%A0%94%E7%A9%B6/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="类型论" scheme="https://121.5.103.67/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
+    <category term="类型论" scheme="https://salty-frankenstein.github.io/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
     
-    <category term="PL" scheme="https://121.5.103.67/tags/PL/"/>
+    <category term="PL" scheme="https://salty-frankenstein.github.io/tags/PL/"/>
     
   </entry>
   
   <entry>
     <title>【类型论】五、Types dependent on terms</title>
-    <link href="https://121.5.103.67/2021/11/01/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%BA%94%E3%80%81Types-dependent-on-terms/"/>
-    <id>https://121.5.103.67/2021/11/01/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%BA%94%E3%80%81Types-dependent-on-terms/</id>
+    <link href="https://salty-frankenstein.github.io/2021/11/01/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%BA%94%E3%80%81Types-dependent-on-terms/"/>
+    <id>https://salty-frankenstein.github.io/2021/11/01/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%BA%94%E3%80%81Types-dependent-on-terms/</id>
     <published>2021-11-01T10:58:23.000Z</published>
     <updated>2022-03-01T07:03:07.594Z</updated>
     
@@ -142,21 +142,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="类型论" scheme="https://121.5.103.67/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
+    <category term="类型论" scheme="https://salty-frankenstein.github.io/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【函数式】如何使用子类型多态</title>
-    <link href="https://121.5.103.67/2021/06/05/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%AD%90%E7%B1%BB%E5%9E%8B%E5%A4%9A%E6%80%81/"/>
-    <id>https://121.5.103.67/2021/06/05/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%AD%90%E7%B1%BB%E5%9E%8B%E5%A4%9A%E6%80%81/</id>
+    <link href="https://salty-frankenstein.github.io/2021/06/05/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%AD%90%E7%B1%BB%E5%9E%8B%E5%A4%9A%E6%80%81/"/>
+    <id>https://salty-frankenstein.github.io/2021/06/05/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%AD%90%E7%B1%BB%E5%9E%8B%E5%A4%9A%E6%80%81/</id>
     <published>2021-06-05T04:18:58.000Z</published>
     <updated>2021-06-05T08:36:30.398Z</updated>
     
@@ -167,21 +167,21 @@
     
     
     
-    <category term="杂记" scheme="https://121.5.103.67/categories/%E6%9D%82%E8%AE%B0/"/>
+    <category term="杂记" scheme="https://salty-frankenstein.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="Haskell" scheme="https://121.5.103.67/tags/Haskell/"/>
+    <category term="Haskell" scheme="https://salty-frankenstein.github.io/tags/Haskell/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【类型论】四、Types dependent on types</title>
-    <link href="https://121.5.103.67/2021/03/22/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E5%9B%9B%E3%80%81Types-dependent-on-types/"/>
-    <id>https://121.5.103.67/2021/03/22/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E5%9B%9B%E3%80%81Types-dependent-on-types/</id>
+    <link href="https://salty-frankenstein.github.io/2021/03/22/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E5%9B%9B%E3%80%81Types-dependent-on-types/"/>
+    <id>https://salty-frankenstein.github.io/2021/03/22/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E5%9B%9B%E3%80%81Types-dependent-on-types/</id>
     <published>2021-03-22T10:00:00.000Z</published>
     <updated>2021-11-03T12:15:03.245Z</updated>
     
@@ -194,21 +194,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="类型论" scheme="https://121.5.103.67/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
+    <category term="类型论" scheme="https://salty-frankenstein.github.io/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【类型论】三、Second order typed lambda calculus</title>
-    <link href="https://121.5.103.67/2021/03/16/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%B8%89%E3%80%81Second-order-typed-lambda-calculus/"/>
-    <id>https://121.5.103.67/2021/03/16/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%B8%89%E3%80%81Second-order-typed-lambda-calculus/</id>
+    <link href="https://salty-frankenstein.github.io/2021/03/16/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%B8%89%E3%80%81Second-order-typed-lambda-calculus/"/>
+    <id>https://salty-frankenstein.github.io/2021/03/16/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%B8%89%E3%80%81Second-order-typed-lambda-calculus/</id>
     <published>2021-03-16T11:41:01.000Z</published>
     <updated>2021-04-05T12:01:49.099Z</updated>
     
@@ -227,21 +227,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="类型论" scheme="https://121.5.103.67/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
+    <category term="类型论" scheme="https://salty-frankenstein.github.io/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【类型论】二、Simply typed lambda calculus</title>
-    <link href="https://121.5.103.67/2021/03/06/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%BA%8C%E3%80%81Simply-typed-lambda-calculus/"/>
-    <id>https://121.5.103.67/2021/03/06/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%BA%8C%E3%80%81Simply-typed-lambda-calculus/</id>
+    <link href="https://salty-frankenstein.github.io/2021/03/06/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%BA%8C%E3%80%81Simply-typed-lambda-calculus/"/>
+    <id>https://salty-frankenstein.github.io/2021/03/06/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%BA%8C%E3%80%81Simply-typed-lambda-calculus/</id>
     <published>2021-03-06T11:21:00.000Z</published>
     <updated>2021-11-01T10:35:51.914Z</updated>
     
@@ -259,21 +259,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="类型论" scheme="https://121.5.103.67/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
+    <category term="类型论" scheme="https://salty-frankenstein.github.io/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【类型论】一、Untyped lambda calculus</title>
-    <link href="https://121.5.103.67/2021/03/06/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%B8%80%E3%80%81Untyped-lambda-calculus/"/>
-    <id>https://121.5.103.67/2021/03/06/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%B8%80%E3%80%81Untyped-lambda-calculus/</id>
+    <link href="https://salty-frankenstein.github.io/2021/03/06/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%B8%80%E3%80%81Untyped-lambda-calculus/"/>
+    <id>https://salty-frankenstein.github.io/2021/03/06/%E3%80%90%E7%B1%BB%E5%9E%8B%E8%AE%BA%E3%80%91%E4%B8%80%E3%80%81Untyped-lambda-calculus/</id>
     <published>2021-03-06T06:23:46.000Z</published>
     <updated>2021-03-06T11:59:44.518Z</updated>
     
@@ -294,21 +294,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="类型论" scheme="https://121.5.103.67/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
+    <category term="类型论" scheme="https://salty-frankenstein.github.io/tags/%E7%B1%BB%E5%9E%8B%E8%AE%BA/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【函数式】二、单子</title>
-    <link href="https://121.5.103.67/2020/09/27/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E4%BA%8C%E3%80%81%E5%8D%95%E5%AD%90/"/>
-    <id>https://121.5.103.67/2020/09/27/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E4%BA%8C%E3%80%81%E5%8D%95%E5%AD%90/</id>
+    <link href="https://salty-frankenstein.github.io/2020/09/27/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E4%BA%8C%E3%80%81%E5%8D%95%E5%AD%90/"/>
+    <id>https://salty-frankenstein.github.io/2020/09/27/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E4%BA%8C%E3%80%81%E5%8D%95%E5%AD%90/</id>
     <published>2020-09-27T06:54:15.000Z</published>
     <updated>2020-09-27T08:24:43.640Z</updated>
     
@@ -323,21 +323,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="Haskell" scheme="https://121.5.103.67/tags/Haskell/"/>
+    <category term="Haskell" scheme="https://salty-frankenstein.github.io/tags/Haskell/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【函数式】一、函子</title>
-    <link href="https://121.5.103.67/2020/08/21/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E4%B8%80%E3%80%81%E5%87%BD%E5%AD%90/"/>
-    <id>https://121.5.103.67/2020/08/21/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E4%B8%80%E3%80%81%E5%87%BD%E5%AD%90/</id>
+    <link href="https://salty-frankenstein.github.io/2020/08/21/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E4%B8%80%E3%80%81%E5%87%BD%E5%AD%90/"/>
+    <id>https://salty-frankenstein.github.io/2020/08/21/%E3%80%90%E5%87%BD%E6%95%B0%E5%BC%8F%E3%80%91%E4%B8%80%E3%80%81%E5%87%BD%E5%AD%90/</id>
     <published>2020-08-21T07:55:17.000Z</published>
     <updated>2020-08-22T16:05:30.094Z</updated>
     
@@ -351,21 +351,21 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="函数式" scheme="https://121.5.103.67/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
+    <category term="函数式" scheme="https://salty-frankenstein.github.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F/"/>
     
-    <category term="Haskell" scheme="https://121.5.103.67/tags/Haskell/"/>
+    <category term="Haskell" scheme="https://salty-frankenstein.github.io/tags/Haskell/"/>
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【杂记】SICP学习笔记（序）</title>
-    <link href="https://121.5.103.67/2019/12/06/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91SICP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%BA%8F%EF%BC%89/"/>
-    <id>https://121.5.103.67/2019/12/06/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91SICP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%BA%8F%EF%BC%89/</id>
+    <link href="https://salty-frankenstein.github.io/2019/12/06/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91SICP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%BA%8F%EF%BC%89/"/>
+    <id>https://salty-frankenstein.github.io/2019/12/06/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91SICP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%BA%8F%EF%BC%89/</id>
     <published>2019-12-06T09:15:33.000Z</published>
     <updated>2020-06-23T09:28:36.021Z</updated>
     
@@ -376,17 +376,17 @@
     
     
     
-    <category term="开发笔记" scheme="https://121.5.103.67/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <category term="开发笔记" scheme="https://salty-frankenstein.github.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="杂记" scheme="https://121.5.103.67/tags/%E6%9D%82%E8%AE%B0/"/>
+    <category term="杂记" scheme="https://salty-frankenstein.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>【Fr2D开发笔记】四、图形、位图和文本渲染</title>
-    <link href="https://121.5.103.67/2019/08/04/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
-    <id>https://121.5.103.67/2019/08/04/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/</id>
+    <link href="https://salty-frankenstein.github.io/2019/08/04/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
+    <id>https://salty-frankenstein.github.io/2019/08/04/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89/</id>
     <published>2019-08-04T03:02:13.000Z</published>
     <updated>2020-07-02T13:27:02.199Z</updated>
     
@@ -397,21 +397,21 @@
     
     
     
-    <category term="开发笔记" scheme="https://121.5.103.67/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <category term="开发笔记" scheme="https://salty-frankenstein.github.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Fr2D开发笔记" scheme="https://121.5.103.67/tags/Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <category term="Fr2D开发笔记" scheme="https://salty-frankenstein.github.io/tags/Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="图形学" scheme="https://121.5.103.67/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
+    <category term="图形学" scheme="https://salty-frankenstein.github.io/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
     
-    <category term="DirectX" scheme="https://121.5.103.67/tags/DirectX/"/>
+    <category term="DirectX" scheme="https://salty-frankenstein.github.io/tags/DirectX/"/>
     
   </entry>
   
   <entry>
     <title>【Fr2D开发笔记】三、Direct2D初始化</title>
-    <link href="https://121.5.103.67/2019/08/03/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-    <id>https://121.5.103.67/2019/08/03/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</id>
+    <link href="https://salty-frankenstein.github.io/2019/08/03/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+    <id>https://salty-frankenstein.github.io/2019/08/03/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</id>
     <published>2019-08-03T12:25:21.000Z</published>
     <updated>2020-07-02T10:18:09.611Z</updated>
     
@@ -423,21 +423,21 @@
     
     
     
-    <category term="开发笔记" scheme="https://121.5.103.67/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <category term="开发笔记" scheme="https://salty-frankenstein.github.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Fr2D开发笔记" scheme="https://121.5.103.67/tags/Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <category term="Fr2D开发笔记" scheme="https://salty-frankenstein.github.io/tags/Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="图形学" scheme="https://121.5.103.67/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
+    <category term="图形学" scheme="https://salty-frankenstein.github.io/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
     
-    <category term="DirectX" scheme="https://121.5.103.67/tags/DirectX/"/>
+    <category term="DirectX" scheme="https://salty-frankenstein.github.io/tags/DirectX/"/>
     
   </entry>
   
   <entry>
     <title>【Fr2D开发笔记】二、创建Window</title>
-    <link href="https://121.5.103.67/2019/08/02/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>https://121.5.103.67/2019/08/02/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
+    <link href="https://salty-frankenstein.github.io/2019/08/02/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>https://salty-frankenstein.github.io/2019/08/02/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
     <published>2019-08-02T12:42:33.000Z</published>
     <updated>2020-06-28T12:46:28.589Z</updated>
     
@@ -448,21 +448,21 @@
     
     
     
-    <category term="开发笔记" scheme="https://121.5.103.67/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <category term="开发笔记" scheme="https://salty-frankenstein.github.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Fr2D开发笔记" scheme="https://121.5.103.67/tags/Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <category term="Fr2D开发笔记" scheme="https://salty-frankenstein.github.io/tags/Fr2D%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="图形学" scheme="https://121.5.103.67/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
+    <category term="图形学" scheme="https://salty-frankenstein.github.io/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
     
-    <category term="DirectX" scheme="https://121.5.103.67/tags/DirectX/"/>
+    <category term="DirectX" scheme="https://salty-frankenstein.github.io/tags/DirectX/"/>
     
   </entry>
   
   <entry>
     <title>【杂记】博客搭建记</title>
-    <link href="https://121.5.103.67/2019/08/02/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/"/>
-    <id>https://121.5.103.67/2019/08/02/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</id>
+    <link href="https://salty-frankenstein.github.io/2019/08/02/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/"/>
+    <id>https://salty-frankenstein.github.io/2019/08/02/%E3%80%90%E6%9D%82%E8%AE%B0%E3%80%91%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</id>
     <published>2019-08-02T11:16:41.000Z</published>
     <updated>2019-08-02T13:39:30.206Z</updated>
     
@@ -473,17 +473,17 @@
     
     
     
-    <category term="开发笔记" scheme="https://121.5.103.67/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <category term="开发笔记" scheme="https://salty-frankenstein.github.io/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="杂记" scheme="https://121.5.103.67/tags/%E6%9D%82%E8%AE%B0/"/>
+    <category term="杂记" scheme="https://salty-frankenstein.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>这是好的</title>
-    <link href="https://121.5.103.67/2019/08/01/%E8%BF%99%E6%98%AF%E5%A5%BD%E7%9A%84/"/>
-    <id>https://121.5.103.67/2019/08/01/%E8%BF%99%E6%98%AF%E5%A5%BD%E7%9A%84/</id>
+    <link href="https://salty-frankenstein.github.io/2019/08/01/%E8%BF%99%E6%98%AF%E5%A5%BD%E7%9A%84/"/>
+    <id>https://salty-frankenstein.github.io/2019/08/01/%E8%BF%99%E6%98%AF%E5%A5%BD%E7%9A%84/</id>
     <published>2019-08-01T08:51:14.000Z</published>
     <updated>2019-08-01T12:50:45.584Z</updated>
     
@@ -503,8 +503,8 @@
   
   <entry>
     <title>【小课堂】八、算法初步</title>
-    <link href="https://121.5.103.67/2019/07/24/%E3%80%90%E5%B0%8F%E8%AF%BE%E5%A0%82%E3%80%91%E5%85%AB%E3%80%81%E7%AE%97%E6%B3%95%E5%88%9D%E6%AD%A5/"/>
-    <id>https://121.5.103.67/2019/07/24/%E3%80%90%E5%B0%8F%E8%AF%BE%E5%A0%82%E3%80%91%E5%85%AB%E3%80%81%E7%AE%97%E6%B3%95%E5%88%9D%E6%AD%A5/</id>
+    <link href="https://salty-frankenstein.github.io/2019/07/24/%E3%80%90%E5%B0%8F%E8%AF%BE%E5%A0%82%E3%80%91%E5%85%AB%E3%80%81%E7%AE%97%E6%B3%95%E5%88%9D%E6%AD%A5/"/>
+    <id>https://salty-frankenstein.github.io/2019/07/24/%E3%80%90%E5%B0%8F%E8%AF%BE%E5%A0%82%E3%80%91%E5%85%AB%E3%80%81%E7%AE%97%E6%B3%95%E5%88%9D%E6%AD%A5/</id>
     <published>2019-07-24T07:52:25.000Z</published>
     <updated>2019-08-05T09:00:02.722Z</updated>
     
@@ -515,19 +515,19 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="C++" scheme="https://121.5.103.67/tags/C/"/>
+    <category term="C++" scheme="https://salty-frankenstein.github.io/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>【小课堂】七、文件</title>
-    <link href="https://121.5.103.67/2019/07/23/%E3%80%90%E5%B0%8F%E8%AF%BE%E5%A0%82%E3%80%91%E4%B8%83%E3%80%81%E6%96%87%E4%BB%B6/"/>
-    <id>https://121.5.103.67/2019/07/23/%E3%80%90%E5%B0%8F%E8%AF%BE%E5%A0%82%E3%80%91%E4%B8%83%E3%80%81%E6%96%87%E4%BB%B6/</id>
+    <link href="https://salty-frankenstein.github.io/2019/07/23/%E3%80%90%E5%B0%8F%E8%AF%BE%E5%A0%82%E3%80%91%E4%B8%83%E3%80%81%E6%96%87%E4%BB%B6/"/>
+    <id>https://salty-frankenstein.github.io/2019/07/23/%E3%80%90%E5%B0%8F%E8%AF%BE%E5%A0%82%E3%80%91%E4%B8%83%E3%80%81%E6%96%87%E4%BB%B6/</id>
     <published>2019-07-23T01:54:52.000Z</published>
     <updated>2019-08-01T16:24:32.866Z</updated>
     
@@ -538,12 +538,12 @@
     
     
     
-    <category term="小课堂" scheme="https://121.5.103.67/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
+    <category term="小课堂" scheme="https://salty-frankenstein.github.io/categories/%E5%B0%8F%E8%AF%BE%E5%A0%82/"/>
     
     
-    <category term="教程" scheme="https://121.5.103.67/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://salty-frankenstein.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="C++" scheme="https://121.5.103.67/tags/C/"/>
+    <category term="C++" scheme="https://salty-frankenstein.github.io/tags/C/"/>
     
   </entry>
   

@@ -5,7 +5,7 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://121.5.103.67">
+  <link rel="dns-prefetch" href="https://salty-frankenstein.github.io">
   <title>【模板】前缀和、差分 | 地灵殿</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,7 +13,7 @@
   <meta name="description" content="前缀和进阶各种奇怪题目的优化有奇效！ 前缀和算法可以在常数时间复杂度内计算给定区间i~j的和，而从头扫一遍的复杂度为O(n)；而二维前缀和则可以在常数时间内计算(x1,y1)到(x2,y2)矩阵内的和，而从头扫一遍为O(n^2)！！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【模板】前缀和、差分">
-<meta property="og:url" content="https://121.5.103.67/2018/01/06/%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E5%89%8D%E7%BC%80%E5%92%8C%E3%80%81%E5%B7%AE%E5%88%86/index.html">
+<meta property="og:url" content="https://salty-frankenstein.github.io/2018/01/06/%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E5%89%8D%E7%BC%80%E5%92%8C%E3%80%81%E5%B7%AE%E5%88%86/index.html">
 <meta property="og:site_name" content="地灵殿">
 <meta property="og:description" content="前缀和进阶各种奇怪题目的优化有奇效！ 前缀和算法可以在常数时间复杂度内计算给定区间i~j的和，而从头扫一遍的复杂度为O(n)；而二维前缀和则可以在常数时间内计算(x1,y1)到(x2,y2)矩阵内的和，而从头扫一遍为O(n^2)！！">
 <meta property="og:locale">
@@ -318,7 +318,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://121.5.103.67/2018/01/06/【模板】前缀和、差分/" title="【模板】前缀和、差分" target="_blank">https://121.5.103.67/2018/01/06/【模板】前缀和、差分/</a>
+          <a href="https://salty-frankenstein.github.io/2018/01/06/【模板】前缀和、差分/" title="【模板】前缀和、差分" target="_blank">https://salty-frankenstein.github.io/2018/01/06/【模板】前缀和、差分/</a>
         </li>
         
         <li>
@@ -415,7 +415,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://121.5.103.67/2018/01/06/%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E5%89%8D%E7%BC%80%E5%92%8C%E3%80%81%E5%B7%AE%E5%88%86/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://salty-frankenstein.github.io/2018/01/06/%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E5%89%8D%E7%BC%80%E5%92%8C%E3%80%81%E5%B7%AE%E5%88%86/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -497,7 +497,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2025 <a href="https://121.5.103.67/" target="_blank">Frankenstein</a>
+    		&copy; 2018-2025 <a href="https://salty-frankenstein.github.io/" target="_blank">Frankenstein</a>
     	</div>
       	<div class="footer-right">
 			
@@ -982,7 +982,57 @@
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
   
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
   
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"log":false});</script></body>
+    var modelName = "miku";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "left", 
+       width: 145, 
+       height: 315, 
+       hOffset: 350, 
+      
+    },
+    mobile: {
+       show: false, 
+       scale: 0.6 
+    },
+    react: {
+       opacity: 0.8 
+    }
+  })
+
+</script>
+
+  
+  
+</body>
 
 </html>
