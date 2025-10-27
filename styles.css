@@ -1,0 +1,123 @@
+:root{
+  /* Single light theme (user requested) */
+  --accent: #f7a8cc; /* primary pink */
+  --accent-2: #f08fbf; /* complementary pink */
+  --bg: #fff5f8; /* very light pink background */
+  --card: #ffffff;
+  --muted: #6b7280;
+  --text: #0f1724;
+  --glass: rgba(15,23,36,0.06);
+  --radius: 6px;
+  --max-width: 980px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  /* subtle gradient using the accent color blended into the base background */
+  background: linear-gradient(180deg, rgba(247,168,204,0.04), var(--bg));
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  /* base font sizing for better rhythm */
+  font-size:16px;
+  line-height:1.7;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:28px 20px;
+}
+
+.site-header{
+  background:transparent;
+  border-bottom:1px solid var(--glass);
+}
+.site-header .container{display:flex;align-items:center;gap:14px}
+.site-title{margin:0;font-size:2rem;line-height:1.05;font-weight:800}
+.site-tagline{margin:6px 0 0;color:var(--muted);font-size:1.125rem}
+
+/* header CTA */
+.header-meta .site-cta{margin-top:10px;display:inline-block;text-decoration:none;white-space:nowrap}
+.header-meta .site-cta.btn{padding:4px 8px;border-radius:6px;font-size:0.9rem;max-width:110px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center}
+
+/* contact icons on header right */
+.header-right{display:flex;align-items:center;gap:12px}
+.contact-list{display:flex;gap:10px;align-items:center;margin-left:8px}
+.contact-link{display:inline-flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;padding:6px;border-radius:6px}
+.contact-link:hover{color:var(--accent);background:rgba(240,143,191,0.08)}
+.contact-link svg{width:20px;height:20px;display:block;fill:currentColor}
+.contact-icon{width:20px;height:20px;display:block}
+
+/* Avatar + header layout */
+.avatar{
+  width:160px;
+  height:160px;
+  border-radius:var(--radius);
+  object-fit:cover;
+  flex:0 0 auto;
+  margin-right:18px;
+  /* subtle theme-colored border and soft shadow */
+  border:3px solid var(--accent);
+  background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  box-shadow:0 8px 18px rgba(240,143,191,0.08);
+}
+.header-meta{display:flex;flex-direction:column;justify-content:center}
+
+/* Language switch */
+.site-header nav{margin-left:auto}
+.lang-btn{
+  display:inline-block;padding:6px 10px;border-radius:999px;text-decoration:none;font-size:0.9rem;color:var(--text);
+  background:transparent;border:1px solid transparent;transition:all .18s ease;opacity:0.95
+}
+.lang-btn:hover{transform:translateY(-1px);opacity:1}
+.lang-btn.primary{background:var(--accent);color:#fff;border:1px solid rgba(0,0,0,0.06)}
+.lang-btn.ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);color:var(--muted)}
+
+.hero{padding:44px 0 28px;text-align:left}
+
+/* Reduce vertical gap between header and main content (about section) */
+main.container{padding-top:12px}
+section#about{margin-top:12px}
+.hero h2{margin:0 0 14px;font-size:2.4rem;font-weight:800}
+.hero p{margin:0 0 20px;color:var(--muted);max-width:60ch;font-size:1.02rem}
+.cta .btn{display:inline-block;margin-right:10px;padding:10px 16px;border-radius:var(--radius);text-decoration:none}
+.btn{background:var(--accent);color:#fff}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(0,0,0,0.06)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:28px 0}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);border:1px solid rgba(15,23,36,0.05)}
+.card h3{margin:0 0 10px;font-size:1.125rem}
+.card p{margin:0;color:var(--muted);max-width:58ch}
+
+/* project screenshot inside cards */
+.project-screenshot{display:block;width:100%;height:auto;border-radius:6px;margin-top:12px;border:1px solid rgba(15,23,36,0.04);object-fit:cover}
+
+/* make entire project card clickable while preserving card styles */
+.card-link{display:block;color:inherit;text-decoration:none;transition:transform .14s ease,box-shadow .14s ease}
+.card-link:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(15,23,36,0.06)}
+.card-link:focus{outline:2px solid var(--accent);outline-offset:4px}
+
+section#about, section#contact{margin:30px 0;padding:18px;background:transparent;border-radius:var(--radius)}
+section#about h2, section#contact h2{margin-top:0}
+
+.site-footer{padding:20px 0;color:var(--muted);font-size:0.92rem;border-top:1px solid var(--glass);background:transparent}
+
+/* small screens */
+@media (max-width:640px){
+  .hero h2{font-size:1.6rem}
+  .site-header .container{flex-direction:row;align-items:center}
+  .site-header nav{margin-left:8px}
+  .container{padding:18px}
+  .avatar{width:96px;height:96px;margin-right:12px}
+  .site-title{font-size:1.15rem}
+  main.container{padding-top:10px}
+  section#about{margin-top:10px}
+}
+
+/* utility */
+.muted{color:var(--muted)}
+.center{text-align:center}

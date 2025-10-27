@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frankenstein — Homepage</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/33659732?v=4" alt="Your Name avatar">
+        <div class="header-meta">
+          <h1 class="site-title">Frankenstein</h1>
+          <p class="site-tagline">I know that I know nothing.</p>
+          <a class="btn site-cta" href="../blog" target="_blank" rel="noopener">地灵殿入口</a>
+        </div>
+        <nav class="header-right" style="margin-left:auto">
+          <a class="lang-btn ghost" href="zh/index.html">中文</a>
+          <a class="lang-btn ghost" href="ja/index.html">日本語</a>
+          <div class="contact-list">
+            <a class="contact-link" href="https://github.com/salty-Frankenstein" target="_blank" rel="noopener" aria-label="GitHub">
+              <img class="contact-icon" src="svg/github-svgrepo-com.svg" alt="GitHub">
+            </a>
+            <a class="contact-link" href="mailto:zqc1121@gmail.com" aria-label="Email">
+              <img class="contact-icon" src="svg/email-svgrepo-com.svg" alt="Email">
+            </a>
+            <a class="contact-link" href="https://www.zhihu.com/people/frankenstein-94/activities" target="_blank" rel="noopener" aria-label="Zhihu">
+              <img class="contact-icon" src="svg/zhihu-svgrepo-com.svg" alt="Zhihu">
+            </a>
+            <a class="contact-link" href="https://space.bilibili.com/7319124" target="_blank" rel="noopener" aria-label="Bilibili">
+              <img class="contact-icon" src="svg/bilibili-svgrepo-com.svg" alt="Bilibili">
+            </a>
+            <a class="contact-link" href="http://sighttp.qq.com/msgrd?v=1&uin=1328955419" target="_blank" rel="noopener" aria-label="QQ">
+              <img class="contact-icon" src="svg/qq-svgrepo-com.svg" alt="QQ">
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I'm currently a master's student at Institute of Science Tokyo. 
+          My supervisor is Youyou Cong. 
+          I received my B.Sc. in Computer Science from Nanjing University, and I'm interested in functional programming.
+        </p>
+      </section>
+
+      <section id="projects" class="cards">
+        <a class="card card-link" href="https://github.com/salty-Frankenstein/raytracer-rs" target="_blank" rel="noopener">
+          <h3>A ray tracer in Rust</h3>
+          <p>A real PBR renderer, with microfacet BRDF model and multiple importance sampling</p>
+          <p>
+            <img class="project-screenshot" src="https://raw.githubusercontent.com/salty-Frankenstein/raytracer-rs/master/output/final3.jpg" alt="raytracer final render">
+          </p>
+        </a>
+        <a class="card card-link" href="https://github.com/salty-Frankenstein/Homura" target="_blank" rel="noopener">
+          <h3>Homura</h3>
+          <p> A functional programming language with algebraic effects and effect handlers. It has a type-and-effect system and supports full type inference. Still in development.  </p>
+          <p>
+            <img class="project-screenshot" src="img/homura.png" alt="type inference">
+          </p>
+        </a>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Reach me by email: <a href="mailto:zqc1121@gmail.com">zqc1211@gmail.com</a></p>
+        <p>Find me on <a href="https://github.com/salty-Frankenstein" target="_blank" rel="noopener">GitHub</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Frankenstein — Homepage</small>
+      </div>
+    </footer>
+
+    <script>
+      // auto update year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

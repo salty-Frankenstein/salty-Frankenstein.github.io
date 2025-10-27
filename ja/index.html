@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frankenstein — ホームページ</title>
+  <link rel="icon" href="../img/favicon.ico">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/33659732?v=4" alt="Frankenstein アバター">
+        <div class="header-meta">
+          <h1 class="site-title">Frankenstein</h1>
+          <p class="site-tagline">自分が何も知らないことを知っている。</p>
+          <a class="btn site-cta" href="../blog" target="_blank" rel="noopener">地灵殿入口</a>
+        </div>
+        <nav class="header-right" style="margin-left:auto">
+          <a class="lang-btn ghost" href="../index.html">English</a>
+          <a class="lang-btn ghost" href="../zh/index.html">中文</a>
+          <div class="contact-list">
+            <a class="contact-link" href="https://github.com/salty-Frankenstein" target="_blank" rel="noopener" aria-label="GitHub">
+              <img class="contact-icon" src="../svg/github-svgrepo-com.svg" alt="GitHub">
+            </a>
+            <a class="contact-link" href="mailto:zqc1121@gmail.com" aria-label="Email">
+              <img class="contact-icon" src="../svg/email-svgrepo-com.svg" alt="Email">
+            </a>
+            <a class="contact-link" href="https://www.zhihu.com/people/frankenstein-94/activities" target="_blank" rel="noopener" aria-label="Zhihu">
+              <img class="contact-icon" src="../svg/zhihu-svgrepo-com.svg" alt="Zhihu">
+            </a>
+            <a class="contact-link" href="https://space.bilibili.com/7319124" target="_blank" rel="noopener" aria-label="Bilibili">
+              <img class="contact-icon" src="../svg/bilibili-svgrepo-com.svg" alt="Bilibili">
+            </a>
+            <a class="contact-link" href="http://sighttp.qq.com/msgrd?v=1&uin=1328955419" target="_blank" rel="noopener" aria-label="QQ">
+              <img class="contact-icon" src="../svg/qq-svgrepo-com.svg" alt="QQ">
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about">
+        <h2>自己紹介</h2>
+        <p>
+          私は現在、東京科学大学で修士課程に在学しており、指導教員はYouyou Congです。
+          南京大学で計算機科学の学士号（B.Sc.）を取得しました。
+          関数型プログラミングに興味があります。
+        </p>
+      </section>
+
+      <section id="projects" class="cards">
+        <a class="card card-link" href="https://github.com/salty-Frankenstein/raytracer-rs" target="_blank" rel="noopener">
+          <h3>Rust のレイトレーサー</h3>
+          <p>microfacet BRDF モデルと多重重要度サンプリングを備えた本格的な PBR レンダラ。</p>
+          <p>
+            <img class="project-screenshot" src="https://raw.githubusercontent.com/salty-Frankenstein/raytracer-rs/master/output/final3.jpg" alt="raytracer 最終レンダリング">
+          </p>
+        </a>
+        <a class="card card-link" href="https://github.com/salty-Frankenstein/Homura" target="_blank" rel="noopener">
+          <h3>Homura</h3>
+          <p>代数的効果と効果ハンドラを持つ関数型プログラミング言語。型効果システムを持ち、完全な型推論をサポートしています。現在も開発中です。</p>
+          <p>
+            <img class="project-screenshot" src="../img/homura.png" alt="type inference">
+          </p>
+        </a>
+      </section>
+
+      <section id="contact">
+        <h2>連絡先</h2>
+        <p>メールで連絡: <a href="mailto:zqc1121@gmail.com">zqc1121@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/salty-Frankenstein" target="_blank" rel="noopener">salty-Frankenstein</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Frankenstein — ホームページ</small>
+      </div>
+    </footer>
+
+    <script>
+      // 年を自動更新
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
